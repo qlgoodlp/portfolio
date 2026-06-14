@@ -1,0 +1,1146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B8A5C'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='27' font-weight='800' fill='white' text-anchor='middle'%3EHK%3C/text%3E%3C/svg%3E">
+<title>김현지 — Growth Marketing Portfolio</title>
+<meta name="description" content="UA·리타겟팅·수익화·CRM·데이터 분석까지, 유럽 시장(독일·프랑스)에서 한국 콘텐츠의 풀퍼널 그로스 마케팅을 이끄는 퍼포먼스 마케터 김현지의 포트폴리오입니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="김현지 — 퍼포먼스 마케터 포트폴리오">
+<meta property="og:description" content="CPA -32% · ROAS +229% · 매출 +83% — 유럽 시장 풀퍼널 그로스 마케팅 케이스 스터디 8편과 AI 자동화 사례를 담았습니다.">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="김현지 — 퍼포먼스 마케터 포트폴리오">
+<meta name="twitter:description" content="유럽 시장 풀퍼널 그로스 마케팅 케이스 스터디 8편과 AI 자동화 사례">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --bg:#F7F8FA;
+  --surface:#FFFFFF;
+  --ink:#16202E;
+  --muted:#64748B;
+  --line:#E2E6EC;
+  --accent:#0B8A5C;
+  --accent-soft:#E4F4EE;
+  --navy:#1E3A5F;
+  --green-l:#7BC4A4;
+  --slate:#A9B6C6;
+  --gold:#E0B94B;
+  --red:#C0392B;
+  --body:#3A4657;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+  line-height:1.7;
+  font-size:16px;
+}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+/* ---------- layout ---------- */
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+main{display:flex;gap:56px;align-items:flex-start}
+.content{flex:1;min-width:0}
+
+/* ---------- side nav ---------- */
+.sidenav{
+  position:sticky;top:48px;width:208px;flex-shrink:0;
+  display:flex;flex-direction:column;gap:2px;
+}
+.sidenav a{
+  text-decoration:none;color:var(--muted);
+  font-size:13px;padding:7px 12px;border-left:2px solid var(--line);
+  transition:all .15s ease;
+}
+.sidenav a:hover,.sidenav a.active{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft)}
+.sidenav .nav-label{font-size:11px;letter-spacing:.12em;color:var(--muted);padding:0 12px 10px;text-transform:uppercase}
+
+/* ---------- hero ---------- */
+header.hero{
+  border-bottom:1px solid var(--line);
+  background:var(--surface);
+  padding:88px 0 60px;
+}
+.hero .eyebrow{
+  font-size:12px;letter-spacing:.18em;color:var(--accent);
+  text-transform:uppercase;margin-bottom:20px;font-weight:600;
+}
+.hero h1{
+  font-size:clamp(32px,5.5vw,54px);
+  font-weight:800;letter-spacing:-0.02em;line-height:1.18;
+  margin-bottom:20px;
+}
+.hero h1 .accent{color:var(--accent)}
+.hero p.lede{max-width:680px;color:var(--muted);font-size:17px;margin-bottom:30px}
+.hero .contact{display:flex;flex-wrap:wrap;gap:10px}
+.hero .contact a{
+  font-size:13px;text-decoration:none;color:var(--ink);
+  border:1px solid var(--line);border-radius:999px;padding:7px 16px;
+  background:var(--bg);transition:all .15s;
+}
+.hero .contact a:hover{border-color:var(--accent);color:var(--accent)}
+
+.metric-strip{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  margin-top:44px;background:var(--bg);
+}
+.metric{padding:18px 20px;border-right:1px solid var(--line)}
+.metric:last-child{border-right:none}
+.metric .num{font-size:22px;font-weight:600;color:var(--accent)}
+.metric .lbl{font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* ---------- sections ---------- */
+section.project{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:40px 44px;
+  margin-bottom:28px;
+  scroll-margin-top:48px;
+}
+.cat{
+  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin-bottom:8px;
+  font-family:"IBM Plex Mono",monospace;
+}
+.cat-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+.cat-row .cat{margin-bottom:0}
+.contrib{
+  display:inline-flex;align-items:center;gap:7px;flex-shrink:0;
+  font-size:11.5px;font-weight:700;color:var(--accent);
+  background:var(--accent-soft);border-radius:999px;padding:4px 12px;
+  font-family:"IBM Plex Mono",monospace;letter-spacing:.02em;
+}
+.contrib .note{
+  font-family:"Noto Sans KR",sans-serif;font-weight:500;color:var(--muted);
+  letter-spacing:0;padding-left:7px;border-left:1px solid #BFE3D4;
+}
+.proj-head h2{font-size:23px;font-weight:700;letter-spacing:-0.01em;margin-bottom:18px}
+.proj-body h3{
+  font-size:13px;font-weight:700;margin:24px 0 8px;color:var(--ink);
+  letter-spacing:.06em;text-transform:uppercase;
+  display:flex;align-items:center;gap:8px;
+}
+.proj-body h3::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.proj-body p{color:var(--body);font-size:15px}
+.proj-body ul{padding-left:20px;color:var(--body);font-size:15px}
+.proj-body li{margin:7px 0}
+.proj-body strong{color:var(--ink)}
+
+.insight{
+  margin-top:24px;background:var(--bg);border-left:3px solid var(--accent);
+  border-radius:0 10px 10px 0;padding:14px 18px;
+  font-size:14px;color:var(--body);
+}
+.insight b{color:var(--ink)}
+.insight .lbl{font-size:11px;letter-spacing:.1em;color:var(--accent);font-weight:700;display:block;margin-bottom:4px;text-transform:uppercase}
+
+.kpis{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;padding-top:20px;border-top:1px dashed var(--line)}
+.kpi{
+  border:1px solid var(--line);border-radius:10px;
+  padding:12px 18px;background:var(--bg);min-width:150px;flex:1;
+}
+.kpi .v{font-weight:600;font-size:19px;color:var(--accent);font-family:"IBM Plex Mono",monospace}
+.kpi .k{font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* ---------- charts ---------- */
+.viz{
+  margin-top:22px;background:var(--bg);border:1px solid var(--line);
+  border-radius:12px;padding:24px;
+}
+.viz-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.viz figcaption,.viz .cap{font-size:12.5px;color:var(--muted);text-align:center;margin-top:10px}
+.viz svg{display:block;width:100%;height:auto}
+.viz .chart-title{font-size:13px;font-weight:700;color:var(--ink);text-align:center;margin-bottom:12px}
+.legend{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:12px;font-size:12px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+
+/* SQL code block */
+.codebox{
+  margin-top:22px;background:#1A2230;border-radius:12px;padding:20px 22px;
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;line-height:1.8;
+  color:#D7DEE8;overflow-x:auto;
+}
+.codebox .kw{color:#6FB8FF}.codebox .fn{color:#7BC4A4}.codebox .str{color:#E0B94B}
+.codebox .head{color:#8B97A8;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.codebox .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+
+/* lifecycle stage map */
+.stage-map{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:22px}
+.stage{
+  background:var(--bg);border:1px solid var(--line);border-radius:12px;
+  padding:18px;position:relative;
+}
+.stage .st-head{
+  font-size:12px;font-weight:700;color:#fff;background:var(--navy);
+  border-radius:8px;padding:7px 12px;margin-bottom:12px;line-height:1.45;
+}
+.stage .pain{font-size:13px;color:var(--body);margin-bottom:12px}
+.stage .pain b{display:block;font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-bottom:2px}
+.stage .strat{
+  font-size:13px;font-weight:600;border-radius:8px;padding:8px 12px;line-height:1.5;
+}
+.stage:nth-child(1) .strat{background:var(--accent-soft);color:var(--accent)}
+.stage:nth-child(2) .strat{background:#E6EEF8;color:var(--navy)}
+.stage:nth-child(3) .strat{background:#FAE9E6;color:var(--red)}
+.stage:not(:last-child)::after{
+  content:"→";position:absolute;right:-15px;top:50%;transform:translateY(-50%);
+  color:var(--muted);font-size:16px;z-index:1;
+}
+
+/* ---------- expertise chips ---------- */
+.expertise{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.expertise span{
+  font-size:13px;font-weight:600;color:var(--accent);
+  background:var(--accent-soft);border-radius:999px;padding:6px 16px;
+}
+
+/* ---------- career timeline ---------- */
+.timeline{margin-top:8px}
+.tl-item{
+  display:flex;gap:20px;position:relative;padding:0 0 26px 26px;
+  border-left:2px solid var(--line);
+}
+.tl-item:last-child{padding-bottom:4px}
+.tl-item::before{
+  content:"";position:absolute;left:-7px;top:6px;
+  width:12px;height:12px;border-radius:50%;
+  background:var(--surface);border:3px solid var(--accent);
+}
+.tl-item .period{
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--muted);
+  width:150px;flex-shrink:0;padding-top:2px;
+}
+.tl-item .co{font-size:16.5px;font-weight:700;color:var(--ink)}
+.tl-item .co .now{
+  font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-soft);
+  border-radius:999px;padding:2px 10px;margin-left:8px;vertical-align:2px;
+}
+.tl-item .desc{font-size:14px;color:var(--body);margin-top:3px}
+
+/* ---------- skills grid ---------- */
+.skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.skill-card{
+  background:var(--bg);border:1px solid var(--line);border-radius:12px;
+  padding:20px 22px;
+}
+.skill-card h4{
+  font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:12px;
+}
+.skill-card ul{list-style:none;padding:0}
+.skill-card li{
+  font-size:14px;color:var(--body);padding:4px 0 4px 16px;position:relative;
+}
+.skill-card li::before{content:"·";position:absolute;left:2px;color:var(--accent);font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chips span{
+  font-size:12.5px;color:var(--ink);background:var(--surface);
+  border:1px solid var(--line);border-radius:999px;padding:4px 12px;
+}
+.chips .chip-lbl{
+  border:none;background:none;padding:4px 0;color:var(--muted);
+  font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  width:100%;
+}
+.rating{display:flex;justify-content:space-between;align-items:center;padding:5px 0;font-size:14px;color:var(--body)}
+.rating .stars{font-size:13px;letter-spacing:2px;color:var(--accent)}
+.rating .stars .off{color:#CBD5E0}
+
+@media (max-width:680px){
+  .skill-grid{grid-template-columns:1fr}
+  .tl-item{flex-direction:column;gap:2px}
+  .tl-item .period{width:auto}
+}
+
+/* ---------- AI pipeline ---------- */
+.pipeline{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:22px}
+.pipe-step{
+  background:var(--bg);border:1px solid var(--line);border-radius:12px;
+  padding:18px;position:relative;text-align:center;
+}
+.pipe-step .icon{font-size:22px;margin-bottom:8px}
+.pipe-step .t{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.pipe-step .d{font-size:12.5px;color:var(--muted);line-height:1.5}
+.pipe-step:not(:last-child)::after{
+  content:"→";position:absolute;right:-15px;top:50%;transform:translateY(-50%);
+  color:var(--accent);font-size:16px;font-weight:700;z-index:1;
+}
+.slack-mock{
+  margin-top:18px;background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;padding:18px 20px;
+  box-shadow:0 1px 3px rgba(22,32,46,.05);
+}
+.slack-mock .sm-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.slack-mock .sm-avatar{
+  width:34px;height:34px;border-radius:8px;background:var(--accent);
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:15px;flex-shrink:0;
+}
+.slack-mock .sm-name{font-size:13.5px;font-weight:700;color:var(--ink)}
+.slack-mock .sm-name em{
+  font-style:normal;font-size:10px;font-weight:700;color:var(--muted);
+  background:var(--bg);border:1px solid var(--line);border-radius:4px;
+  padding:1px 5px;margin-left:6px;vertical-align:1px;
+}
+.slack-mock .sm-time{font-size:11.5px;color:var(--muted)}
+.slack-mock .sm-body{font-size:13.5px;color:var(--body);line-height:1.75}
+.slack-mock .sm-body b{color:var(--ink)}
+.slack-mock .sm-tag{
+  display:inline-block;font-size:11px;color:var(--muted);
+  border:1px dashed var(--line);border-radius:6px;padding:1px 8px;margin-top:10px;
+}
+@media (max-width:680px){
+  .pipeline{grid-template-columns:1fr}
+  .pipe-step:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-22px;transform:translateX(-50%)}
+  .pipeline{row-gap:26px}
+}
+
+/* ---------- dashboard mock ---------- */
+.dash-mock{
+  margin-top:18px;background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;padding:20px 22px;
+  box-shadow:0 1px 3px rgba(22,32,46,.05);
+}
+.dash-mock .dm-title{font-size:15px;font-weight:800;color:var(--ink);margin-bottom:14px}
+.dash-controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.dash-controls .ctrl{font-size:11.5px;color:var(--muted)}
+.dash-controls .ctrl .box{
+  margin-top:4px;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+  padding:8px 12px;font-size:13px;color:var(--ink);font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.dash-controls .ctrl .box i{font-style:normal;color:var(--muted);font-weight:400}
+.dash-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.dash-card{
+  border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg);
+}
+.dash-card .thumb{
+  height:74px;display:flex;align-items:center;justify-content:center;
+  font-size:11px;color:#fff;font-weight:700;letter-spacing:.06em;
+}
+.dash-card:nth-child(1) .thumb{background:linear-gradient(135deg,#1E3A5F,#3A5A8C)}
+.dash-card:nth-child(2) .thumb{background:linear-gradient(135deg,#0B8A5C,#3FAE85)}
+.dash-card:nth-child(3) .thumb{background:linear-gradient(135deg,#64748B,#94A3B8)}
+.dash-card .dc-body{padding:10px 12px}
+.dash-card .dc-name{font-size:12px;font-weight:700;color:var(--ink);margin-bottom:6px;font-family:"IBM Plex Mono",monospace}
+.dash-card .dc-metrics{font-size:11.5px;color:var(--muted);line-height:1.7}
+.dash-card .dc-metrics b{color:var(--accent);font-weight:700}
+@media (max-width:680px){
+  .dash-cards{grid-template-columns:1fr}
+  .dash-controls{grid-template-columns:1fr}
+}
+
+/* ---------- project overview ---------- */
+.overview{
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:32px 36px;margin-bottom:28px;scroll-margin-top:48px;
+}
+.overview h2{font-size:20px;font-weight:700;margin-bottom:4px;letter-spacing:-0.01em}
+.overview .ov-sub{font-size:13.5px;color:var(--muted);margin-bottom:20px}
+.ov-list{display:flex;flex-direction:column;gap:0}
+.ov-item{
+  display:flex;align-items:center;gap:18px;
+  padding:15px 12px;border-top:1px solid var(--line);text-decoration:none;
+  transition:background .15s ease;border-radius:8px;
+}
+.ov-item .ov-no{flex-shrink:0;width:26px}
+.ov-item .ov-title{flex:1 1 auto;min-width:0}
+.ov-item .ov-metric{flex-shrink:0;width:150px}
+.ov-item:hover{background:var(--accent-soft)}
+.ov-item .ov-no{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;color:var(--accent)}
+.ov-item .ov-title{color:var(--ink);font-size:15px;font-weight:600;line-height:1.4;padding-right:16px}
+.ov-item .ov-title .ov-cat{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;margin-bottom:1px;font-family:"IBM Plex Mono",monospace}
+.ov-item .ov-metric{
+  font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:700;color:var(--accent);
+  text-align:right;white-space:nowrap;display:flex;flex-direction:column;align-items:flex-end;
+}
+.ov-item .ov-metric span{display:block;font-size:11px;font-weight:500;color:var(--muted);font-family:"Noto Sans KR",sans-serif}
+@media (max-width:680px){
+  .overview{padding:24px 20px}
+  .ov-item{grid-template-columns:26px 1fr;gap:10px;row-gap:4px}
+  .ov-item .ov-metric{grid-column:2;text-align:left;font-size:14px}
+}
+
+footer{
+  text-align:center;color:var(--muted);font-size:13px;
+  padding:48px 0 64px;
+}
+
+@media (max-width:860px){
+  .sidenav{display:none}
+  section.project{padding:28px 22px}
+  .metric-strip{grid-template-columns:repeat(2,1fr)}
+  .metric:nth-child(2){border-right:none}
+  .metric:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .viz-grid{grid-template-columns:1fr}
+  .stage-map{grid-template-columns:1fr}
+  .stage:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-22px;transform:translateX(-50%)}
+  .stage-map{row-gap:26px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ---------- language switch ---------- */
+header.hero{position:relative}
+.lang-switch{
+  position:absolute;top:26px;right:24px;display:flex;gap:2px;
+  border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--bg);
+}
+.lang-switch a{
+  font-size:12px;font-weight:700;text-decoration:none;color:var(--muted);
+  padding:4px 14px;border-radius:999px;
+}
+.lang-switch a.on{background:var(--accent);color:#fff}
+
+/* resume download button */
+.contact a.resume-btn{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.contact a.resume-btn:hover{background:#09714B;color:#fff}
+
+/* ---------- mobile nav ---------- */
+.mobilenav{display:none}
+@media (max-width:860px){
+  .mobilenav{
+    display:flex;position:sticky;top:0;z-index:60;gap:6px;
+    background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);
+    overflow-x:auto;padding:10px 16px;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .mobilenav::-webkit-scrollbar{display:none}
+  .mobilenav a{
+    flex-shrink:0;font-size:12.5px;font-weight:500;color:var(--muted);
+    text-decoration:none;padding:6px 13px;border:1px solid var(--line);
+    border-radius:999px;background:var(--bg);white-space:nowrap;
+  }
+  .mobilenav a.active{color:#fff;background:var(--accent);border-color:var(--accent)}
+  section.project{scroll-margin-top:64px}
+  .lang-switch{top:16px;right:16px}
+}
+
+</style>
+</head>
+<body>
+
+<nav class="mobilenav" aria-label="모바일 목차">
+  <a href="#career">경력</a>
+  <a href="#skills">스킬</a>
+  <a href="#ai">AI 활용</a>
+  <a href="#overview">한눈에</a>
+  <a href="#ua">UA</a>
+  <a href="#content-ua">Content UA</a>
+  <a href="#retargeting">리타겟팅</a>
+  <a href="#monetization">수익화</a>
+  <a href="#data">데이터</a>
+  <a href="#att">ATT 측정</a>
+  <a href="#crm">CRM</a>
+  <a href="#abtest">A/B 테스트</a>
+  <a href="#lifecycle">라이프사이클</a>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="lang-switch" aria-label="언어 선택">
+      <a class="on" href="index.html" aria-current="page">KO</a>
+      <a href="portfolio_kimhyunji_en.html">EN</a>
+    </div>
+    <div class="eyebrow">Portfolio · Performance Marketer</div>
+    <h1>비즈니스 성장을 주도하는<br>퍼포먼스 마케터, <span class="accent">김현지</span>입니다</h1>
+    <p class="lede">크리에이티브 전략부터 풀 퍼널 SQL 데이터 분석까지, 비즈니스 성장을 주도하는 그로스 엔지니어링(Full-Funnel Growth Engineering)을 지향합니다. 유럽 문화와 소비자 행동에 대한 깊은 이해를 바탕으로, 독일·프랑스를 중심으로 한 유럽 시장에서 온·오프라인 채널을 통합 운영하며 한국 콘텐츠의 현지화 마케팅과 성과 창출을 주도하고 있습니다.</p>
+    <div class="expertise">
+      <span>User Acquisition</span>
+      <span>Data Analysis &amp; LTV</span>
+      <span>CRM &amp; Retention</span>
+      <span>SQL &amp; Funnel Optimization</span>
+    </div>
+    <div class="contact">
+      <a class="resume-btn" href="Resume_HyunjiKim_KR.pdf" download>↓ 이력서 다운로드</a>
+      <a href="mailto:qlgoodlp@gmail.com">✉ qlgoodlp@gmail.com</a>
+      <a href="tel:01067642287">☎ 010-6764-2287</a>
+      <a href="https://www.linkedin.com/in/hyunji-kim-88646b2b5/" target="_blank" rel="noopener">in LinkedIn</a>
+    </div>
+    <div class="metric-strip">
+      <div class="metric"><div class="num">-32%</div><div class="lbl">신규 유저 획득 CPA (YoY)</div></div>
+      <div class="metric"><div class="num">+229%</div><div class="lbl">콘텐츠 친화도 타겟팅 ROAS</div></div>
+      <div class="metric"><div class="num">+24%</div><div class="lbl">월간 ARPPU 지속 상승</div></div>
+      <div class="metric"><div class="num">+83%</div><div class="lbl">핵심 타이틀 매출 증대</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap" style="padding-top:56px">
+<main>
+
+  <nav class="sidenav" aria-label="목차">
+    <div class="nav-label">Profile</div>
+    <a href="#career">Career</a>
+    <a href="#skills">Skills &amp; Tools</a>
+    <a href="#ai">AI 활용</a>
+    <div class="nav-label" style="padding-top:18px">Projects</div>
+    <a href="#overview">한눈에 보기</a>
+    <a href="#ua">UA Optimization</a>
+    <a href="#content-ua">Content-centric UA</a>
+    <a href="#retargeting">Retargeting Strategy</a>
+    <a href="#monetization">Monetization</a>
+    <a href="#data">Data Infrastructure</a>
+    <a href="#att">ATT 측정 전략</a>
+    <a href="#crm">CRM Optimization</a>
+    <a href="#abtest">Creative A/B Test</a>
+    <a href="#lifecycle">Lifecycle Marketing</a>
+  </nav>
+
+  <div class="content">
+
+    <!-- Career -->
+    <section class="project" id="career">
+      <div class="cat">Career</div>
+      <div class="proj-head"><h2>경력</h2></div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="period">2021.07 — 현재</div>
+          <div>
+            <div class="co">키다리스튜디오<span class="now">재직 중</span></div>
+            <div class="desc">유럽 시장(독일·프랑스) 대상 콘텐츠 플랫폼 퍼포먼스 마케팅 — 본 포트폴리오의 UA·리타겟팅·수익화·CRM 프로젝트 수행</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="period">2020.12 — 2021.05</div>
+          <div>
+            <div class="co">주식회사 바름</div>
+            <div class="desc">디지털 마케터 — 마케팅 대행사에서 다양한 광고주의 디지털 마케팅 캠페인 대행 운영</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="period">2019.08 — 2019.11</div>
+          <div>
+            <div class="co">슈피겐코리아</div>
+            <div class="desc">아마존(Amazon) 영업 및 마케팅</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section class="project" id="skills">
+      <div class="cat">Skills &amp; Tools</div>
+      <div class="proj-head"><h2>스킬 &amp; 툴</h2></div>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h4>Performance</h4>
+          <ul>
+            <li>Facebook, Google 등 다수 매체 셀프 서브</li>
+            <li>Singular 등 Tracking Tool 활용</li>
+            <li>Creative 기획 및 제작</li>
+            <li>Data &amp; Performance 관리, 리포트</li>
+            <li>MediaMix 운영</li>
+            <li>신규 캠페인 및 매체 서칭, 발굴</li>
+            <li>해외 매체 및 파트너사 커뮤니케이션</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Content</h4>
+          <ul>
+            <li>로컬 매거진/커뮤니티 연계 마케팅</li>
+            <li>인플루언서 제휴 마케팅</li>
+            <li>PR</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Tracking &amp; Media</h4>
+          <div class="chips">
+            <span class="chip-lbl">Tracking Tools</span>
+            <span>GA</span><span>Singular</span><span>Amplitude</span><span>GTM (Google Tag Manager)</span><span>Snowflake</span>
+            <span class="chip-lbl">Media</span>
+            <span>Facebook</span><span>Google</span><span>TikTok</span><span>Twitter</span><span>Pinterest</span><span>Snapchat</span><span>Spotify</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Tools &amp; Languages</h4>
+          <div class="rating"><span>Excel</span><span class="stars">★★★★★</span></div>
+          <div class="rating"><span>PPT</span><span class="stars">★★★★★</span></div>
+          <div class="rating"><span>Word</span><span class="stars">★★★★★</span></div>
+          <div class="rating"><span>SQL</span><span class="stars">★★★<span class="off">★★</span></span></div>
+          <div class="rating"><span>Photoshop</span><span class="stars">★★★★<span class="off">★</span></span></div>
+          <div class="rating"><span>Capcut</span><span class="stars">★★★★<span class="off">★</span></span></div>
+          <div class="rating" style="margin-top:10px;padding-top:12px;border-top:1px dashed var(--line)"><span>German</span><span class="stars">★★★★★</span></div>
+          <div class="rating"><span>English</span><span class="stars">★★★★<span class="off">★</span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Utilization -->
+    <section class="project" id="ai">
+      <div class="cat">AI Utilization</div>
+      <div class="proj-head"><h2>Codex 기반 마케팅 자동화 대시보드 &amp; 데일리 인사이트 봇</h2></div>
+      <div class="proj-body">
+        <p>OpenAI Codex를 활용해 마케팅 자동화 대시보드를 직접 구축했습니다. 매체별 광고 성과 데이터와 <strong>Singular 코호트 데이터를 통합</strong>해 한 화면에서 분석하고, 매일 오전 Slack으로 인사이트 리포트를 받으며, 소재(Creative) 단위 성과 대시보드로 고성과 크리에이티브를 실시간 추적해 데이터 기반 의사결정 속도를 높이고 있습니다.</p>
+
+        <div class="pipeline">
+          <div class="pipe-step">
+            <div class="icon">📊</div>
+            <div class="t">데이터 통합 수집</div>
+            <div class="d">매체 데이터(Meta·Google 등)<br>+ Singular 코호트 데이터 통합</div>
+          </div>
+          <div class="pipe-step">
+            <div class="icon">🤖</div>
+            <div class="t">Codex 분석 파이프라인</div>
+            <div class="d">전일 / 7일 평균 / WoW 3중 비교<br>이상 징후 탐지 · 액션 자동 제안</div>
+          </div>
+          <div class="pipe-step">
+            <div class="icon">💬</div>
+            <div class="t">Slack 데일리 리포트</div>
+            <div class="d">매일 오전 10시 자동 발송<br>워크플로 기반 무인 운영</div>
+          </div>
+        </div>
+
+        <h3>Slack 데일리 인사이트 리포트</h3>
+        <div class="slack-mock" aria-label="실제 운영 중인 Slack 데일리 인사이트 리포트 예시">
+          <div class="sm-head">
+            <div class="sm-avatar">D</div>
+            <div>
+              <div class="sm-name">Daily Marketing Insight<em>워크플로</em></div>
+              <div class="sm-time"># 일일-마케팅-보고 · 오전 10:00</div>
+            </div>
+          </div>
+          <div class="sm-body">
+            📊 <b>Daily Marketing Insight</b><br>
+            Report Date: 2026-06-11 · Comparison: 전일 성과 / 최근 7일 평균 / 전주 동일 요일(WoW) 대비<br><br>
+            <b>1. Executive Summary</b> — Cost / Revenue / ROAS / Signups / First Purchase / Repurchase 핵심 지표 3중 비교<br>
+            <b>2. Channel Insight</b> — Meta·Google 등 채널별 ROAS / Revenue / Signups<br>
+            <b>3. Genre Insight</b> — RF·HL·BL 장르별 ROAS / CTR / Signup Rate<br>
+            <b>4. Audience Insight</b> — 오디언스별 ARPPU / Repurchase Rate / ROAS<br>
+            <b>5. Anomaly Alert</b> — 임계치 기반 이상 징후 자동 탐지<br>
+            <span style="color:#C0392B">⚠ Meta / BL: Revenue -20% 이상 감소 · Purchase Rate 급락 캠페인 즉시 알림</span><br>
+            <b>6. Recommended Actions &amp; Opportunity Signals</b> — 데이터 기반 액션 자동 제안<br>
+            <span style="color:#0B8A5C">↗ ROAS 높은 장르: RF (3.45x) · Scale 가능 캠페인: Meta HL (2.47x)</span><br>
+            <span style="color:#C0392B">↘ 예산 축소 필요 캠페인: Meta BL (0.79x)</span>
+          </div>
+          <span class="sm-tag">실제 운영 중인 자동화 리포트 구조</span>
+        </div>
+
+        <h3>Creative 성과 분석 대시보드</h3>
+        <p>데일리 리포트와 함께, 소재(Creative) 단위 성과를 분석하는 대시보드를 구축했습니다. 소재별 Spend · CTR · 가입 CPA · 첫결제 CPA · ROAS를 자동 집계하고, 정렬 기준과 최소 광고비 필터로 <strong>고성과 소재 TOP 10</strong>을 즉시 추출해 크리에이티브 의사결정에 활용하고 있습니다.</p>
+
+        <div class="dash-mock" aria-label="소재 성과 분석 대시보드 구조 목업">
+          <div class="dm-title">고성과 소재 TOP 10</div>
+          <div class="dash-controls">
+            <div class="ctrl">Creative 정렬 기준<div class="box">ROAS <i>▾</i></div></div>
+            <div class="ctrl">최소 광고비<div class="box">100.00 <i>− +</i></div></div>
+          </div>
+          <div class="dash-cards">
+            <div class="dash-card">
+              <div class="thumb">CREATIVE A</div>
+              <div class="dc-body">
+                <div class="dc-name">FB_WD_SG_EP9</div>
+                <div class="dc-metrics">Spend 121.76 · CTR 2.4%<br>첫결제 CPA 0.38 · <b>ROAS 5550%</b></div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="thumb">CREATIVE B</div>
+              <div class="dc-body">
+                <div class="dc-name">FB_CR_1-1-2</div>
+                <div class="dc-metrics">Spend 122.84 · CTR 4.0%<br>첫결제 CPA 0.51 · <b>ROAS 4639%</b></div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="thumb">CREATIVE C</div>
+              <div class="dc-body">
+                <div class="dc-name">FB_CR_EP12-13</div>
+                <div class="dc-metrics">Spend 591.96 · CTR 2.1%<br>첫결제 CPA 0.42 · <b>ROAS 3717%</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="insight"><span class="lbl">Impact</span>매체별로 흩어져 있던 광고 데이터와 Singular 코호트 데이터를 <b>한눈에 보는 단일 대시보드</b>로 통합하고, 수작업 리포팅을 <b>완전 자동화</b>했습니다. 임계치 기반 <b>이상 징후 알림</b>과 Scale/축소 캠페인 <b>자동 제안</b>으로 출근 직후 바로 액션 가능한 의사결정 체계를 만들었습니다.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">2개 소스 통합</div><div class="k">매체 데이터 + Singular 코호트</div></div>
+        <div class="kpi"><div class="v">매일 10AM</div><div class="k">Slack 자동 리포트 발송</div></div>
+        <div class="kpi"><div class="v">6개 모듈</div><div class="k">요약·채널·장르·오디언스·이상탐지·액션</div></div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="overview" id="overview">
+      <h2>프로젝트 한눈에 보기</h2>
+      <div class="ov-sub">9개 프로젝트 · 클릭하면 상세 케이스로 이동합니다</div>
+      <div class="ov-list">
+        <a class="ov-item" href="#ua"><span class="ov-no">01</span><span class="ov-title"><span class="ov-cat">UA Optimization</span>매체 다각화 분석 및 CPA 최적화</span><span class="ov-metric">CPA -32%<span>YoY 절감</span></span></a>
+        <a class="ov-item" href="#content-ua"><span class="ov-no">02</span><span class="ov-title"><span class="ov-cat">Content-centric UA</span>킬러 IP 기반 타겟팅</span><span class="ov-metric">ROAS +229%<span>유사 장르 타겟팅</span></span></a>
+        <a class="ov-item" href="#retargeting"><span class="ov-no">03</span><span class="ov-title"><span class="ov-cat">Retargeting Strategy</span>행동 데이터 기반 고가치 유저 발굴</span><span class="ov-metric">검색량 10x<span>ROAS MoM +132%</span></span></a>
+        <a class="ov-item" href="#monetization"><span class="ov-no">04</span><span class="ov-title"><span class="ov-cat">Monetization</span>리타겟팅 윈도우 축소를 통한 결제 가속화</span><span class="ov-metric">ARPPU +24%<span>전환수 8배↑</span></span></a>
+        <a class="ov-item" href="#data"><span class="ov-no">05</span><span class="ov-title"><span class="ov-cat">Data Infrastructure</span>코호트 누적 매출 트래킹 및 매출 증대</span><span class="ov-metric">매출 +83%<span>매출 1위 3개월</span></span></a>
+        <a class="ov-item" href="#att"><span class="ov-no">06</span><span class="ov-title"><span class="ov-cat">Measurement Strategy</span>ATT 대응 퍼스트파티 데이터 분석 체계 구축</span><span class="ov-metric">First-party<span>Snowflake 체계</span></span></a>
+        <a class="ov-item" href="#crm"><span class="ov-no">07</span><span class="ov-title"><span class="ov-cat">CRM Optimization</span>SQL 기반 퍼널 바틀넥 진단</span><span class="ov-metric">DAU/MAU +113%<span>첫결제 CVR +13%p</span></span></a>
+        <a class="ov-item" href="#abtest"><span class="ov-no">08</span><span class="ov-title"><span class="ov-cat">Creative A/B Test</span>장르별 고성과 소재 포맷 도출</span><span class="ov-metric">ROAS +163%p<span>전체 상승</span></span></a>
+        <a class="ov-item" href="#lifecycle"><span class="ov-no">09</span><span class="ov-title"><span class="ov-cat">Lifecycle Marketing</span>유저 스테이지별 세분화된 CRM 메시징 맵</span><span class="ov-metric">전환율 +23%<span>인게이지먼트 10x</span></span></a>
+      </div>
+    </section>
+
+    <!-- 1. UA Optimization -->
+    <section class="project" id="ua">
+      <div class="cat-row"><div class="cat">01 · UA Optimization</div><span class="contrib">기여도 100%</span></div>
+      <div class="proj-head"><h2>매체 다각화 분석 및 CPA 최적화</h2></div>
+      <div class="proj-body">
+        <h3>Problem</h3>
+        <p>Meta(CPA <strong>+15%</strong>)·Google(CPA <strong>+12%</strong>) 매체 단가가 지속 상승하며, 양대 매체 의존형 미디어 믹스로는 신규 유저 획득 비용(CPA)이 구조적으로 악화되는 상황이었습니다.</p>
+        <h3>Strategy</h3>
+        <ul>
+          <li>신규 채널 <strong>TikTok, Pinterest를 전격 도입</strong>하고 매체별 특성을 반영해 타겟팅을 재편성</li>
+        </ul>
+
+        <div class="viz">
+          <div class="viz-grid">
+            <figure>
+              <div class="chart-title">기존 의존형 믹스 — CPA 악화</div>
+              <svg viewBox="0 0 300 190" role="img" aria-label="Meta와 Google CPA 상승 막대그래프">
+                <line x1="30" y1="160" x2="280" y2="160" stroke="#E2E6EC" stroke-width="1.5"/>
+                <rect x="75" y="40" width="56" height="120" rx="5" fill="#1E3A5F"/>
+                <rect x="175" y="64" width="56" height="96" rx="5" fill="#A9B6C6"/>
+                <text x="103" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#C0392B">CPA ↑15%</text>
+                <text x="203" y="54" text-anchor="middle" font-size="13" font-weight="700" fill="#C0392B">CPA ↑12%</text>
+                <text x="103" y="180" text-anchor="middle" font-size="12.5" fill="#64748B">Meta</text>
+                <text x="203" y="180" text-anchor="middle" font-size="12.5" fill="#64748B">Google</text>
+              </svg>
+              <figcaption>2개 매체 의존 → 단가 상승에 무방비</figcaption>
+            </figure>
+            <figure>
+              <div class="chart-title">최적화된 다각화 믹스 — CPA -32% (YoY)</div>
+              <svg viewBox="0 0 300 190" role="img" aria-label="다각화된 미디어 믹스 도넛 차트">
+                <g transform="rotate(-90 150 92)">
+                  <circle cx="150" cy="92" r="54" fill="none" stroke="#1E3A5F" stroke-width="26" stroke-dasharray="118.75 339.29"/>
+                  <circle cx="150" cy="92" r="54" fill="none" stroke="#0B8A5C" stroke-width="26" stroke-dasharray="84.82 339.29" stroke-dashoffset="-118.75"/>
+                  <circle cx="150" cy="92" r="54" fill="none" stroke="#7BC4A4" stroke-width="26" stroke-dasharray="84.82 339.29" stroke-dashoffset="-203.57"/>
+                  <circle cx="150" cy="92" r="54" fill="none" stroke="#A9B6C6" stroke-width="26" stroke-dasharray="50.9 339.29" stroke-dashoffset="-288.39"/>
+                </g>
+                <text x="150" y="88" text-anchor="middle" font-size="17" font-weight="800" fill="#0B8A5C">-32%</text>
+                <text x="150" y="106" text-anchor="middle" font-size="10.5" fill="#64748B">CPA YoY</text>
+              </svg>
+              <div class="legend">
+                <span><i style="background:#1E3A5F"></i>Meta 35%</span>
+                <span><i style="background:#0B8A5C"></i>TikTok 25% <em style="font-style:normal;color:#0B8A5C;font-weight:700">NEW</em></span>
+                <span><i style="background:#7BC4A4"></i>Google 25%</span>
+                <span><i style="background:#A9B6C6"></i>Pinterest 15% <em style="font-style:normal;color:#0B8A5C;font-weight:700">NEW</em></span>
+              </div>
+            </figure>
+          </div>
+        </div>
+
+        <h3>Result</h3>
+        <p>전년 대비(YoY) 신규 유저 획득 CPA <strong>32% 절감</strong>을 달성하고, Meta/Google 의존도를 탈피한 지속 가능한 매체 다각화 구조를 구축했습니다.</p>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">-32%</div><div class="k">신규 유저 획득 CPA (YoY)</div></div>
+        <div class="kpi"><div class="v">4채널</div><div class="k">다각화된 미디어 믹스</div></div>
+      </div>
+    </section>
+
+    <!-- 2. Content-centric UA -->
+    <section class="project" id="content-ua">
+      <div class="cat-row"><div class="cat">02 · Content-centric UA</div><span class="contrib">기여도 100%</span></div>
+      <div class="proj-head"><h2>킬러 IP 기반 타겟팅</h2></div>
+      <div class="proj-body">
+        <h3>Problem</h3>
+        <p>고부가가치 킬러 콘텐츠의 매출을 극대화하는 데 한계가 있었고, 단순 광범위 타겟팅(Broad Targeting)으로는 전환 효율이 저하되고 있었습니다.</p>
+        <h3>Strategy</h3>
+        <ul>
+          <li>유저 행동 데이터를 기반으로 오디언스를 세분화: <strong>① 시즌 복귀작 기열람자 타겟팅</strong>, <strong>② 유사 장르 IP 선호 유저 타겟팅</strong></li>
+        </ul>
+
+        <div class="viz">
+          <div class="chart-title">타겟팅 방식별 ROAS 비교</div>
+          <svg viewBox="0 0 480 230" role="img" aria-label="광범위 타겟팅 대비 행동 데이터 타겟팅 ROAS 비교 막대그래프">
+            <line x1="40" y1="195" x2="450" y2="195" stroke="#E2E6EC" stroke-width="1.5"/>
+            <rect x="80" y="169" width="70" height="26" rx="5" fill="#A9B6C6"/>
+            <rect x="205" y="129" width="70" height="66" rx="5" fill="#7BC4A4"/>
+            <rect x="330" y="45" width="70" height="150" rx="5" fill="#0B8A5C"/>
+            <text x="115" y="160" text-anchor="middle" font-size="12.5" fill="#64748B">기준</text>
+            <text x="240" y="119" text-anchor="middle" font-size="14" font-weight="800" fill="#16202E">+101%</text>
+            <text x="365" y="35" text-anchor="middle" font-size="15" font-weight="800" fill="#0B8A5C">+229%</text>
+            <text x="115" y="215" text-anchor="middle" font-size="12.5" fill="#64748B">광범위 타겟팅</text>
+            <text x="240" y="215" text-anchor="middle" font-size="12.5" fill="#64748B">복귀작 기열람자</text>
+            <text x="365" y="215" text-anchor="middle" font-size="12.5" fill="#64748B">유사 장르 기열람자</text>
+          </svg>
+        </div>
+
+        <h3>Result</h3>
+        <p>유사 장르 기열람자 타겟팅 ROAS <strong>229% 수직 상승</strong>, 복귀작 기열람자 타겟팅 ROAS <strong>101% 상승</strong>과 함께 핵심 액션 장르 매출 TOP 3를 달성했습니다.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>콘텐츠 속성(장르, 화풍, 스토리)과 유저의 과거 소비 데이터를 결합한 <b>'콘텐츠 친화도 타겟팅'</b>이 광범위 타겟팅보다 압도적인 ROAS를 창출합니다.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">+229%</div><div class="k">유사 장르 기열람자 ROAS</div></div>
+        <div class="kpi"><div class="v">+101%</div><div class="k">복귀작 기열람자 ROAS</div></div>
+        <div class="kpi"><div class="v">TOP 3</div><div class="k">핵심 액션 장르 매출</div></div>
+      </div>
+    </section>
+
+    <!-- 3. Retargeting Strategy -->
+    <section class="project" id="retargeting">
+      <div class="cat-row"><div class="cat">03 · Retargeting Strategy</div><span class="contrib">기여도 100%</span></div>
+      <div class="proj-head"><h2>행동 데이터 기반 고가치 유저 발굴</h2></div>
+      <div class="proj-body">
+        <h3>Problem</h3>
+        <p>플랫폼 매출을 강력하게 견인할 고관여 콘텐츠의 수익 극대화 모델이 부재했습니다.</p>
+        <h3>Strategy</h3>
+        <ul>
+          <li>오가닉 검색량 급증 트렌드를 활용한 <strong>행동 데이터 기반 리타겟팅</strong> 발굴 — Anime 연관 키워드 검색 유저 타겟팅</li>
+        </ul>
+
+        <div class="viz">
+          <div class="chart-title">런칭 캠페인 후 연관 키워드 오가닉 검색량</div>
+          <svg viewBox="0 0 480 220" role="img" aria-label="검색량 10배 상승 추이 곡선">
+            <line x1="40" y1="190" x2="450" y2="190" stroke="#E2E6EC" stroke-width="1.5"/>
+            <line x1="40" y1="190" x2="40" y2="20" stroke="#E2E6EC" stroke-width="1.5"/>
+            <path d="M45,182 C170,178 290,140 425,38" fill="none" stroke="#0B8A5C" stroke-width="4" stroke-linecap="round"/>
+            <path d="M413,36 L428,35 L424,50" fill="none" stroke="#0B8A5C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="220" y="80" font-size="34" font-weight="800" fill="#0B8A5C">10x</text>
+            <text x="30" y="110" font-size="11.5" fill="#64748B" transform="rotate(-90 30 110)" text-anchor="middle">Search Volume</text>
+            <text x="245" y="208" text-anchor="middle" font-size="11.5" fill="#64748B">Time (캠페인 런칭 이후)</text>
+          </svg>
+        </div>
+
+        <h3>Result</h3>
+        <p>런칭 캠페인 이후 연관 키워드의 구글 오가닉 검색량이 <strong>10배 상승</strong>했고, 소셜 미디어 방문자 ROAS가 <strong>MoM +132%</strong>로 폭발적으로 성장했습니다.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>플랫폼 외부의 오가닉 검색 인텐트(Intent)를 포착해 정교한 IP 매칭 리타겟팅과 결합하면, <b>폭발적인 수익 창출 루프</b>가 형성됩니다.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">10x</div><div class="k">연관 키워드 오가닉 검색량</div></div>
+        <div class="kpi"><div class="v">+132%</div><div class="k">소셜 방문자 ROAS (MoM)</div></div>
+      </div>
+    </section>
+
+    <!-- 4. Monetization Optimization -->
+    <section class="project" id="monetization">
+      <div class="cat-row"><div class="cat">04 · Monetization Optimization</div><span class="contrib">기여도 100%</span></div>
+      <div class="proj-head"><h2>리타겟팅 윈도우 과감한 축소를 통한 결제 가속화</h2></div>
+      <div class="proj-body">
+        <h3>Strategy</h3>
+        <ul>
+          <li>유저 행동 패턴 분석을 통해 리타겟팅 윈도우를 <strong>30일 → 14일로 과감히 축소</strong></li>
+          <li>최적화 이벤트 A/B 테스트 진행: <strong>'결제' vs '유료 회차 열람'</strong></li>
+        </ul>
+
+        <div class="viz">
+          <div class="viz-grid">
+            <figure>
+              <div class="chart-title">리타겟팅 윈도우 축소</div>
+              <svg viewBox="0 0 300 200" role="img" aria-label="리타겟팅 윈도우 30일에서 14일로 축소">
+                <rect x="45" y="40" width="80" height="140" rx="8" fill="#A9B6C6"/>
+                <text x="85" y="116" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">30일</text>
+                <path d="M140,95 L175,95 L175,80 L200,105 L175,130 L175,115 L140,115 Z" fill="#0B8A5C"/>
+                <rect x="210" y="105" width="60" height="75" rx="8" fill="#0B8A5C"/>
+                <text x="240" y="148" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">14일</text>
+              </svg>
+              <figcaption>소비 속도에 맞춘 노출 윈도우 재설계</figcaption>
+            </figure>
+            <figure>
+              <div class="chart-title">월간 ARPPU 추이 — 7개월 연속 상승</div>
+              <svg viewBox="0 0 300 200" role="img" aria-label="월간 ARPPU 7개월 연속 상승 막대그래프">
+                <line x1="20" y1="170" x2="290" y2="170" stroke="#E2E6EC" stroke-width="1.5"/>
+                <rect x="30"  y="126" width="24" height="44"  rx="4" fill="#1E3A5F"/>
+                <rect x="67"  y="113" width="24" height="57"  rx="4" fill="#1E3A5F"/>
+                <rect x="104" y="102" width="24" height="68"  rx="4" fill="#1E3A5F"/>
+                <rect x="141" y="88"  width="24" height="82"  rx="4" fill="#1E3A5F"/>
+                <rect x="178" y="73"  width="24" height="97"  rx="4" fill="#1E3A5F"/>
+                <rect x="215" y="60"  width="24" height="110" rx="4" fill="#1E3A5F"/>
+                <rect x="252" y="49"  width="24" height="121" rx="4" fill="#0B8A5C"/>
+                <path d="M42,118 L262,41" stroke="#C0392B" stroke-width="2.5" stroke-dasharray="6 5" fill="none"/>
+                <path d="M251,38 L266,33 L259,49 Z" fill="#C0392B" stroke="#C0392B" stroke-width="1" stroke-linejoin="round"/>
+                <text x="150" y="32" text-anchor="middle" font-size="16" font-weight="800" fill="#C0392B">+24%</text>
+                <text x="42"  y="186" text-anchor="middle" font-size="10.5" fill="#64748B">1월</text>
+                <text x="116" y="186" text-anchor="middle" font-size="10.5" fill="#64748B">3월</text>
+                <text x="190" y="186" text-anchor="middle" font-size="10.5" fill="#64748B">5월</text>
+                <text x="264" y="186" text-anchor="middle" font-size="10.5" fill="#64748B">7월</text>
+              </svg>
+            </figure>
+          </div>
+        </div>
+
+        <h3>Result</h3>
+        <p>리타겟 기간 변경 후 플랫폼 월간 ARPPU가 <strong>24% 지속 상승</strong>했고, '결제(Repurchase)' 이벤트 최적화로 구매 전환수가 <strong>8배 이상 증가</strong>했습니다.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>연재형 콘텐츠의 자연스러운 소비 속도에 맞춰 광고 노출 윈도우를 조정하는 것이 <b>과금 사이클을 직접적으로 가속화</b>합니다.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">+24%</div><div class="k">월간 ARPPU 지속 상승</div></div>
+        <div class="kpi"><div class="v">8x+</div><div class="k">구매 전환수 증가</div></div>
+      </div>
+    </section>
+
+    <!-- 5. Data Infrastructure -->
+    <section class="project" id="data">
+      <div class="cat-row"><div class="cat">05 · Data Infrastructure</div><span class="contrib">기여도 100%</span></div>
+      <div class="proj-head"><h2>코호트 누적 매출 트래킹 및 핵심 타이틀 매출 증대</h2></div>
+      <div class="proj-body">
+        <h3>Strategy</h3>
+        <ul>
+          <li><strong>Singular 및 SQL 연동</strong>을 통한 데이터 정밀 분석 인프라 구축</li>
+          <li>분석 기준을 단기 ROAS에서 <strong>'30일 기준 코호트별 누적 매출 트래킹'</strong>으로 전환하고, 작품별 누적 매출 성과에 따라 예산 재분배</li>
+        </ul>
+
+        <div class="viz">
+          <div class="chart-title">코호트 누적 매출 ROAS 추이 (1d → 30d)</div>
+          <svg viewBox="0 0 480 240" role="img" aria-label="작품별 코호트 누적 매출 ROAS 꺾은선 그래프">
+            <line x1="50" y1="200" x2="450" y2="200" stroke="#E2E6EC" stroke-width="1.5"/>
+            <line x1="50" y1="200" x2="50" y2="20" stroke="#E2E6EC" stroke-width="1.5"/>
+            <g font-size="10.5" fill="#64748B">
+              <text x="42" y="204" text-anchor="end">0%</text>
+              <text x="42" y="140" text-anchor="end">30%</text>
+              <text x="42" y="76" text-anchor="end">60%</text>
+              <text x="42" y="28" text-anchor="end">85%</text>
+            </g>
+            <line x1="50" y1="136" x2="450" y2="136" stroke="#E2E6EC" stroke-dasharray="3 4"/>
+            <line x1="50" y1="72"  x2="450" y2="72"  stroke="#E2E6EC" stroke-dasharray="3 4"/>
+            <!-- 작품 A -->
+            <polyline points="80,189 200,136 320,68 430,30" fill="none" stroke="#0B8A5C" stroke-width="3.5" stroke-linecap="round"/>
+            <g fill="#0B8A5C"><circle cx="80" cy="189" r="4.5"/><circle cx="200" cy="136" r="4.5"/><circle cx="320" cy="68" r="4.5"/><circle cx="430" cy="30" r="4.5"/></g>
+            <!-- 작품 B -->
+            <polyline points="80,196 200,160 320,128 430,94" fill="none" stroke="#1E3A5F" stroke-width="3" stroke-linecap="round"/>
+            <g fill="#1E3A5F"><circle cx="80" cy="196" r="4"/><circle cx="200" cy="160" r="4"/><circle cx="320" cy="128" r="4"/><circle cx="430" cy="94" r="4"/></g>
+            <!-- 작품 C -->
+            <polyline points="80,198 200,183 320,174 430,164" fill="none" stroke="#A9B6C6" stroke-width="3" stroke-linecap="round"/>
+            <g fill="#A9B6C6"><circle cx="80" cy="198" r="4"/><circle cx="200" cy="183" r="4"/><circle cx="320" cy="174" r="4"/><circle cx="430" cy="164" r="4"/></g>
+            <g font-size="11.5" fill="#64748B">
+              <text x="80" y="222" text-anchor="middle">1d</text>
+              <text x="200" y="222" text-anchor="middle">7d</text>
+              <text x="320" y="222" text-anchor="middle">14d</text>
+              <text x="430" y="222" text-anchor="middle">30d</text>
+            </g>
+          </svg>
+          <div class="legend">
+            <span><i style="background:#0B8A5C"></i>작품 A — 예산 집중</span>
+            <span><i style="background:#1E3A5F"></i>작품 B</span>
+            <span><i style="background:#A9B6C6"></i>작품 C</span>
+          </div>
+          <div class="cap">단기 ROAS로는 보이지 않던 작품 A의 LTV 잠재력을 코호트 트래킹으로 포착</div>
+        </div>
+
+        <h3>Result</h3>
+        <p>예산 재분배 결과 핵심 타이틀 매출이 <strong>83% 폭발적으로 증대</strong>했고, 해당 작품은 플랫폼 내 <strong>매출 1위를 3개월 연속 유지</strong>했습니다.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>단기 ROAS에서 <b>'코호트 기반 LTV' 중심</b>으로 분석 기준을 전환할 때, 정확한 마케팅 투자 의사결정이 가능해집니다.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">+83%</div><div class="k">핵심 타이틀 매출 증대</div></div>
+        <div class="kpi"><div class="v">1위 ×3개월</div><div class="k">플랫폼 내 매출 순위 연속 유지</div></div>
+      </div>
+    </section>
+
+    <!-- 6. ATT Measurement Strategy -->
+    <section class="project" id="att">
+      <div class="cat-row"><div class="cat">06 · Measurement Strategy</div><span class="contrib">기여도 100%</span></div>
+      <div class="proj-head"><h2>ATT 이후 iOS 측정 환경 변화 대응 및 퍼스트파티 데이터 기반 성과 분석 체계 구축</h2></div>
+      <div class="proj-body">
+        <h3>Problem</h3>
+        <p>Apple의 ATT(App Tracking Transparency) 도입 이후 iOS 캠페인의 <strong>사용자 단위 측정이 어려워지면서</strong>, 앱 캠페인 데이터만으로는 유저의 실제 가치를 정확히 평가하기 어려운 환경이 되었습니다.</p>
+        <h3>Hypothesis</h3>
+        <ul>
+          <li>SKAN(SKAdNetwork) 기반의 제한적 집계 데이터만으로는 한계가 명확하다 — <strong>퍼스트파티 User ID를 축으로 측정 체계를 재설계</strong>해야 ATT 환경에서도 유저의 장기 가치를 추적할 수 있다</li>
+        </ul>
+
+        <div class="viz">
+          <div class="chart-title">측정 전략 전환 흐름</div>
+          <svg viewBox="0 0 480 250" role="img" aria-label="ATT 대응 측정 전략 전환 단계 다이어그램">
+            <defs>
+              <marker id="arr" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+                <path d="M1,1 L8,4.5 L1,8 Z" fill="#0B8A5C"/>
+              </marker>
+            </defs>
+            <g font-family="Noto Sans KR, sans-serif">
+              <rect x="120" y="12" width="240" height="34" rx="8" fill="#FAE9E6" stroke="#E3B7AF"/>
+              <text x="240" y="33" text-anchor="middle" font-size="13" font-weight="700" fill="#C0392B">ATT 도입 · iOS 측정 한계 인식</text>
+              <line x1="240" y1="46" x2="240" y2="64" stroke="#0B8A5C" stroke-width="2" marker-end="url(#arr)"/>
+
+              <rect x="120" y="66" width="240" height="34" rx="8" fill="#E4F4EE" stroke="#B6E0CE"/>
+              <text x="240" y="87" text-anchor="middle" font-size="13" font-weight="700" fill="#0B8A5C">Web-to-App 비중 확대</text>
+              <line x1="240" y1="100" x2="240" y2="118" stroke="#0B8A5C" stroke-width="2" marker-end="url(#arr)"/>
+
+              <rect x="120" y="120" width="240" height="34" rx="8" fill="#E4F4EE" stroke="#B6E0CE"/>
+              <text x="240" y="141" text-anchor="middle" font-size="13" font-weight="700" fill="#0B8A5C">퍼스트파티 User ID 분석</text>
+              <line x1="240" y1="154" x2="240" y2="172" stroke="#0B8A5C" stroke-width="2" marker-end="url(#arr)"/>
+
+              <rect x="100" y="174" width="280" height="40" rx="8" fill="#1E3A5F"/>
+              <text x="240" y="193" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Snowflake 기반 분석 체계 구축</text>
+              <text x="240" y="208" text-anchor="middle" font-size="10.5" fill="#A9C3E0">가입 → 결제 → 재결제 경로 연결 분석</text>
+            </g>
+          </svg>
+        </div>
+
+        <h3>Action</h3>
+        <ul>
+          <li>iOS 측정 한계를 보완하기 위해 <strong>Web-to-App 유입 비중 확대</strong></li>
+          <li>Singular 연동 데이터를 바탕으로 <strong>Snowflake 기반 User ID 분석 환경 구축</strong></li>
+        </ul>
+        <h3>Analysis</h3>
+        <ul>
+          <li>퍼스트파티 User ID를 축으로 <strong>가입 → 결제 → 재결제 경로를 연결</strong>해 유저 단위 장기 가치 추적</li>
+          <li>국가별·플랫폼별 구매 행동을 세분화해 분석</li>
+        </ul>
+        <h3>Result</h3>
+        <p>ATT 환경에서도 퍼스트파티 데이터 기반으로 유저의 장기 가치를 분석할 수 있는 체계를 확보했고, <strong>단기 CPA 중심에서 재결제·ARPPU 중심 KPI 운영으로 전환</strong>할 근거를 마련했습니다.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>플랫폼이 부과한 측정 제약(ATT)은 서드파티 트래킹의 한계일 뿐, <b>퍼스트파티 User ID를 자산으로 삼으면</b> 오히려 단기 지표를 넘어선 장기 가치 중심의 측정 체계로 전환하는 계기가 됩니다.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">First-party</div><div class="k">User ID 기반 측정 체계 전환</div></div>
+        <div class="kpi"><div class="v">Snowflake</div><div class="k">가입→결제→재결제 경로 분석</div></div>
+        <div class="kpi"><div class="v">KPI 전환</div><div class="k">단기 CPA → 재결제·ARPPU 중심</div></div>
+      </div>
+    </section>
+    <section class="project" id="crm">
+      <div class="cat-row"><div class="cat">07 · CRM Optimization</div><span class="contrib">기여도 90%<span class="note">운영 협업</span></span></div>
+      <div class="proj-head"><h2>SQL 기반 퍼널 바틀넥 진단 및 활성 유저 볼륨 극대화</h2></div>
+      <div class="proj-body">
+        <h3>Problem</h3>
+        <p>신규 획득 유저가 활성 유저로 전환되는 퍼널에서 <strong>'첫 결제(First Purchase)'가 핵심 병목 지점</strong>임을 SQL 기반 분석으로 진단했습니다.</p>
+
+        <div class="viz">
+          <div class="chart-title">퍼널 병목 진단</div>
+          <svg viewBox="0 0 480 130" role="img" aria-label="신규 획득 유저가 첫 결제 구간에서 병목되는 퍼널 다이어그램">
+            <path d="M20,20 L185,48 L185,82 L20,110 Z" fill="#1E3A5F" opacity="0.85"/>
+            <path d="M295,48 L460,20 L460,110 L295,82 Z" fill="#1E3A5F" opacity="0.85"/>
+            <rect x="185" y="44" width="110" height="42" rx="7" fill="#C0392B"/>
+            <text x="240" y="61" text-anchor="middle" font-size="10.5" fill="#fff" font-weight="600">병목 지점</text>
+            <text x="240" y="76" text-anchor="middle" font-size="11" fill="#fff" font-weight="800">First Purchase</text>
+            <text x="95" y="69" text-anchor="middle" font-size="11.5" fill="#fff" font-weight="600">신규 획득 유저</text>
+            <text x="382" y="69" text-anchor="middle" font-size="11.5" fill="#fff" font-weight="600">활성·결제 유저</text>
+          </svg>
+        </div>
+
+        <h3>Strategy</h3>
+        <ul>
+          <li>SQL 쿼리로 결제 로그를 직접 분석해 <strong>고관여 미결제 유저 세그먼트</strong>를 추출</li>
+          <li>타겟팅 프로모션(CRM) 전개: <strong>첫 결제 시 50% 캐시백 자동화</strong></li>
+        </ul>
+
+        <div class="codebox" role="img" aria-label="결제 로그 분석 SQL 쿼리">
+          <div class="head"><span class="dot" style="background:#FF5F57"></span><span class="dot" style="background:#FEBC2E"></span><span class="dot" style="background:#28C840"></span>&nbsp;funnel_bottleneck_analysis.sql</div>
+<span class="kw">SELECT</span> us.id, us.email, <span class="fn">sum</span>(payment_log.payment_count)<br>
+<span class="kw">FROM</span> user <span class="kw">AS</span> us<br>
+<span class="kw">JOIN</span> payment_log <span class="kw">AS</span> sep_payment <span class="kw">ON</span> us.id = sep_payment.user_id<br>
+<span class="kw">JOIN</span> payment_log <span class="kw">AS</span> oct_payment <span class="kw">ON</span> us.id = oct_payment.user_id<br>
+<span class="kw">WHERE</span> sep_payment.created_at <span class="kw">BETWEEN</span> <span class="str">1693612800000</span> <span class="kw">AND</span> <span class="str">1696118400000</span><br>
+&nbsp;&nbsp;<span class="kw">AND</span> oct_payment.created_at <span class="kw">BETWEEN</span> <span class="str">1696204800000</span> <span class="kw">AND</span> <span class="str">1698796800000</span><br>
+<span class="kw">GROUP BY</span> us.id, us.email;
+        </div>
+
+        <h3>Result</h3>
+        <p>고관여 미결제 유저 타겟팅으로 DAU/MAU가 <strong>113% 대폭 개선</strong>되었고, 타겟 프로모션 전개로 첫 결제 전환율(CVR)이 <strong>13%p 상승</strong>했습니다.</p>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">+113%</div><div class="k">DAU/MAU 개선</div></div>
+        <div class="kpi"><div class="v">+13%p</div><div class="k">첫 결제 전환율(CVR)</div></div>
+      </div>
+    </section>
+
+    <!-- 8. Creative A/B Test -->
+    <section class="project" id="abtest">
+      <div class="cat-row"><div class="cat">08 · Creative A/B Test</div><span class="contrib">기여도 80%<span class="note">디자이너 협업</span></span></div>
+      <div class="proj-head"><h2>장르별 고성과 소재 포맷 도출</h2></div>
+      <div class="proj-body">
+        <h3>Strategy</h3>
+        <ul>
+          <li>콘텐츠 장르별(로맨스판타지, 액션, BL)로 소재 포맷(이미지 / 캐러셀 / 영상)을 세분화한 <strong>A/B 테스트 진행</strong></li>
+        </ul>
+
+        <div class="viz">
+          <div class="chart-title">장르 × 소재 포맷별 효율 비교</div>
+          <svg viewBox="0 0 480 240" role="img" aria-label="장르별 소재 포맷 A/B 테스트 결과 그룹 막대그래프">
+            <line x1="40" y1="200" x2="450" y2="200" stroke="#E2E6EC" stroke-width="1.5"/>
+            <!-- 로판: 이미지 최고 -->
+            <rect x="70"  y="50"  width="26" height="150" rx="4" fill="#E0B94B"/>
+            <rect x="102" y="123" width="26" height="77"  rx="4" fill="#7BC4A4"/>
+            <rect x="134" y="134" width="26" height="66"  rx="4" fill="#1E3A5F"/>
+            <!-- 액션: 영상 최고 -->
+            <rect x="207" y="107" width="26" height="93"  rx="4" fill="#E0B94B"/>
+            <rect x="239" y="104" width="26" height="96"  rx="4" fill="#7BC4A4"/>
+            <rect x="271" y="59"  width="26" height="141" rx="4" fill="#1E3A5F"/>
+            <path d="M220,90 L284,90 L284,49" fill="none" stroke="#C0392B" stroke-width="2" stroke-dasharray="5 4"/>
+            <path d="M278,46 L284,42 L290,46 L284,56 Z" fill="#C0392B"/>
+            <!-- BL: 이미지 최고 -->
+            <rect x="344" y="63"  width="26" height="137" rx="4" fill="#E0B94B"/>
+            <rect x="376" y="113" width="26" height="87"  rx="4" fill="#7BC4A4"/>
+            <rect x="408" y="98"  width="26" height="102" rx="4" fill="#1E3A5F"/>
+            <g font-size="12.5" fill="#64748B">
+              <text x="115" y="222" text-anchor="middle">로판</text>
+              <text x="252" y="222" text-anchor="middle">액션</text>
+              <text x="389" y="222" text-anchor="middle">BL</text>
+            </g>
+          </svg>
+          <div class="legend">
+            <span><i style="background:#E0B94B"></i>이미지</span>
+            <span><i style="background:#7BC4A4"></i>캐러셀</span>
+            <span><i style="background:#1E3A5F"></i>영상</span>
+          </div>
+          <div class="cap">감정선 중심 장르(로판·BL)는 이미지, 동적 장르(액션)는 영상이 고효율</div>
+        </div>
+
+        <h3>Result</h3>
+        <p>장르별 고효율 소재 포맷 매칭으로 전체 ROAS가 <strong>163%p 상승</strong>했으며, 데이터 기반의 크리에이티브 A/B 테스트 방법론을 조직에 확립했습니다.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>크리에이티브 포맷은 해당 장르 고유의 소비 스타일(동적인 액션 vs 정적인 감정선)과 <b>완벽히 동기화되어야 최고 효율</b>을 냅니다.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">+163%p</div><div class="k">전체 ROAS 상승</div></div>
+        <div class="kpi"><div class="v">방법론 확립</div><div class="k">크리에이티브 A/B 테스트 체계</div></div>
+      </div>
+    </section>
+
+    <!-- 9. Lifecycle Marketing -->
+    <section class="project" id="lifecycle">
+      <div class="cat-row"><div class="cat">09 · Lifecycle Marketing</div><span class="contrib">기여도 80%<span class="note">운영 협업</span></span></div>
+      <div class="proj-head"><h2>유저 스테이지별 세분화된 CRM 메시징 맵</h2></div>
+      <div class="proj-body">
+        <h3>Strategy</h3>
+        <p>이탈 시점별로 유저 스테이지를 3단계로 나누고, 각 단계의 페인포인트에 대응하는 맞춤형 CRM 메시징 맵을 설계했습니다.</p>
+
+        <div class="stage-map">
+          <div class="stage">
+            <div class="st-head">Stage 1 · 무료 조회 전 이탈</div>
+            <div class="pain"><b>Pain Point</b>관심 콘텐츠 브라우징 실패</div>
+            <div class="strat">전략: 베스트셀러 및 관심사 기반 큐레이션</div>
+          </div>
+          <div class="stage">
+            <div class="st-head">Stage 2 · 무료 조회 후 첫결제 전 이탈</div>
+            <div class="pain"><b>Pain Point</b>콘텐츠 흥미 부족</div>
+            <div class="strat">전략: 유사 장르 타 킬러 콘텐츠 추천</div>
+          </div>
+          <div class="stage">
+            <div class="st-head">Stage 3 · 첫결제 후 재결제 전 이탈</div>
+            <div class="pain"><b>Pain Point</b>코인 소진 후 추가 결제 저항</div>
+            <div class="strat">전략: 코인 결제 유도 한정 프로모션 및 N% 할인</div>
+          </div>
+        </div>
+
+        <h3>Result</h3>
+        <p>인플루언서 활용으로 평균 대비 인게이지먼트가 <strong>10배 상승</strong>했고, 스테이지별 맞춤형 메시징 도출로 타 소재 대비 첫결제 전환율이 <strong>23% 우수</strong>한 성과를 기록했습니다.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>인플루언서가 확보한 초기 신뢰도를 퍼널 스테이지별 <b>정밀한 CRM 메시지로 이어받을 때</b> 마케팅 효율이 극대화됩니다.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">10x</div><div class="k">평균 대비 인게이지먼트</div></div>
+        <div class="kpi"><div class="v">+23%</div><div class="k">첫결제 전환율 (타 소재 대비)</div></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+</div>
+
+<footer>© 2026 Kim Hyunji · Growth Marketing Portfolio · 마지막 업데이트 2026.06</footer>
+
+<script>
+const links=[...document.querySelectorAll('.sidenav a, .mobilenav a')];
+const secs=[...document.querySelectorAll('section.project')];
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+e.target.id));
+    }
+  });
+},{rootMargin:'-30% 0px -60% 0px'});
+secs.forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
