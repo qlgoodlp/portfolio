@@ -168,7 +168,7 @@ section.project{
   font-family:"IBM Plex Mono",monospace;font-size:12.5px;line-height:1.8;
   color:#D7DEE8;overflow-x:auto;
 }
-.codebox .kw{color:#6FB8FF}.codebox .fn{color:#7BC4A4}.codebox .str{color:#E0B94B}
+.codebox .kw{color:#6FB8FF}.codebox .fn{color:#7BC4A4}.codebox .str{color:#E0B94B}.codebox .cmt{color:#7E8A9A;font-style:italic}
 .codebox .head{color:#8B97A8;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px}
 .codebox .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
 
@@ -432,9 +432,7 @@ header.hero{position:relative}
   <a href="#skills">스킬</a>
   <a href="#ai">AI 활용</a>
   <a href="#overview">한눈에</a>
-  <a href="#ua">UA</a>
-  <a href="#content-ua">Content UA</a>
-  <a href="#retargeting">리타겟팅</a>
+  <a href="#ua">Performance UA</a>
   <a href="#monetization">수익화</a>
   <a href="#data">데이터</a>
   <a href="#att">ATT 측정</a>
@@ -483,9 +481,7 @@ header.hero{position:relative}
     <a href="#ai">AI 활용</a>
     <div class="nav-label" style="padding-top:18px">Projects</div>
     <a href="#overview">한눈에 보기</a>
-    <a href="#ua">UA Optimization</a>
-    <a href="#content-ua">Content-centric UA</a>
-    <a href="#retargeting">Retargeting Strategy</a>
+    <a href="#ua">Performance UA</a>
     <a href="#monetization">Monetization</a>
     <a href="#data">Data Infrastructure</a>
     <a href="#att">ATT 측정 전략</a>
@@ -669,92 +665,34 @@ header.hero{position:relative}
     <!-- Project Overview -->
     <section class="overview" id="overview">
       <h2>프로젝트 한눈에 보기</h2>
-      <div class="ov-sub">9개 프로젝트 · 클릭하면 상세 케이스로 이동합니다</div>
+      <div class="ov-sub">7개 프로젝트 · 클릭하면 상세 케이스로 이동합니다</div>
       <div class="ov-list">
-        <a class="ov-item" href="#ua"><span class="ov-no">01</span><span class="ov-title"><span class="ov-cat">UA Optimization</span>매체 다각화 분석 및 CPA 최적화</span><span class="ov-metric">CPA -32%<span>YoY 절감</span></span></a>
-        <a class="ov-item" href="#content-ua"><span class="ov-no">02</span><span class="ov-title"><span class="ov-cat">Content-centric UA</span>킬러 IP 기반 타겟팅</span><span class="ov-metric">ROAS +229%<span>유사 장르 타겟팅</span></span></a>
-        <a class="ov-item" href="#retargeting"><span class="ov-no">03</span><span class="ov-title"><span class="ov-cat">Retargeting Strategy</span>행동 데이터 기반 고가치 유저 발굴</span><span class="ov-metric">검색량 10x<span>ROAS MoM +132%</span></span></a>
-        <a class="ov-item" href="#monetization"><span class="ov-no">04</span><span class="ov-title"><span class="ov-cat">Monetization</span>리타겟팅 윈도우 축소를 통한 결제 가속화</span><span class="ov-metric">ARPPU +24%<span>전환수 8배↑</span></span></a>
-        <a class="ov-item" href="#data"><span class="ov-no">05</span><span class="ov-title"><span class="ov-cat">Data Infrastructure</span>코호트 누적 매출 트래킹 및 매출 증대</span><span class="ov-metric">매출 +83%<span>매출 1위 3개월</span></span></a>
-        <a class="ov-item" href="#att"><span class="ov-no">06</span><span class="ov-title"><span class="ov-cat">Measurement Strategy</span>ATT 대응 퍼스트파티 데이터 분석 체계 구축</span><span class="ov-metric">First-party<span>Snowflake 체계</span></span></a>
-        <a class="ov-item" href="#crm"><span class="ov-no">07</span><span class="ov-title"><span class="ov-cat">CRM Optimization</span>SQL 기반 퍼널 바틀넥 진단</span><span class="ov-metric">DAU/MAU +113%<span>첫결제 CVR +13%p</span></span></a>
-        <a class="ov-item" href="#abtest"><span class="ov-no">08</span><span class="ov-title"><span class="ov-cat">Creative A/B Test</span>장르별 고성과 소재 포맷 도출</span><span class="ov-metric">ROAS +163%p<span>전체 상승</span></span></a>
-        <a class="ov-item" href="#lifecycle"><span class="ov-no">09</span><span class="ov-title"><span class="ov-cat">Lifecycle Marketing</span>유저 스테이지별 세분화된 CRM 메시징 맵</span><span class="ov-metric">전환율 +23%<span>인게이지먼트 10x</span></span></a>
+        <a class="ov-item" href="#ua"><span class="ov-no">01</span><span class="ov-title"><span class="ov-cat">Performance UA</span>데이터 기반 퍼포먼스 UA 최적화 (다각화·타겟팅·리타겟팅)</span><span class="ov-metric">ROAS +229%<span>CPA -32% · 검색량 10x</span></span></a>
+        <a class="ov-item" href="#monetization"><span class="ov-no">02</span><span class="ov-title"><span class="ov-cat">Monetization</span>리타겟팅 윈도우 축소를 통한 결제 가속화</span><span class="ov-metric">ARPPU +24%<span>전환수 8배↑</span></span></a>
+        <a class="ov-item" href="#data"><span class="ov-no">03</span><span class="ov-title"><span class="ov-cat">Data Infrastructure</span>코호트 누적 매출 트래킹 및 매출 증대</span><span class="ov-metric">매출 +83%<span>매출 1위 3개월</span></span></a>
+        <a class="ov-item" href="#att"><span class="ov-no">04</span><span class="ov-title"><span class="ov-cat">Measurement Strategy</span>ATT 대응 퍼스트파티 데이터 분석 체계 구축</span><span class="ov-metric">First-party<span>Snowflake 체계</span></span></a>
+        <a class="ov-item" href="#crm"><span class="ov-no">05</span><span class="ov-title"><span class="ov-cat">CRM Optimization</span>ERD 이해 기반 SQL 퍼널 바틀넥 진단</span><span class="ov-metric">DAU/MAU +113%<span>첫결제 CVR +13%p</span></span></a>
+        <a class="ov-item" href="#abtest"><span class="ov-no">06</span><span class="ov-title"><span class="ov-cat">Creative A/B Test</span>장르별 고성과 소재 포맷 도출</span><span class="ov-metric">ROAS +163%p<span>전체 상승</span></span></a>
+        <a class="ov-item" href="#lifecycle"><span class="ov-no">07</span><span class="ov-title"><span class="ov-cat">Lifecycle Marketing</span>유저 스테이지별 세분화된 CRM 메시징 맵</span><span class="ov-metric">전환율 +23%<span>인게이지먼트 10x</span></span></a>
       </div>
     </section>
 
-    <!-- 1. UA Optimization -->
+    <!-- 1. Performance UA Optimization (통합) -->
     <section class="project" id="ua">
-      <div class="cat-row"><div class="cat">01 · UA Optimization</div><span class="contrib">기여도 100%</span></div>
-      <div class="proj-head"><h2>매체 다각화 분석 및 CPA 최적화</h2></div>
+      <div class="cat-row"><div class="cat">01 · Performance UA</div><span class="contrib">기여도 100%</span></div>
+      <div class="proj-head"><h2>데이터 기반 퍼포먼스 UA 최적화 — 매체 다각화 · 콘텐츠 친화도 타겟팅 · 행동 데이터 리타겟팅</h2></div>
       <div class="proj-body">
         <h3>Problem</h3>
-        <p>Meta(CPA <strong>+15%</strong>)·Google(CPA <strong>+12%</strong>) 매체 단가가 지속 상승하며, 양대 매체 의존형 미디어 믹스로는 신규 유저 획득 비용(CPA)이 구조적으로 악화되는 상황이었습니다.</p>
+        <p>Meta·Google 양대 매체 의존(각 CPA +15%·+12%)과 단순 광범위 타겟팅으로는 신규 유저 획득 비용(CPA)과 전환 효율이 구조적으로 악화되는 상황이었습니다.</p>
         <h3>Strategy</h3>
         <ul>
-          <li>신규 채널 <strong>TikTok, Pinterest를 전격 도입</strong>하고 매체별 특성을 반영해 타겟팅을 재편성</li>
+          <li><strong>매체 다각화</strong>: TikTok·Pinterest를 신규 도입해 4채널 믹스(Meta 35 / TikTok 25 / Google 25 / Pinterest 15)로 재편</li>
+          <li><strong>콘텐츠 친화도 타겟팅</strong>: 유저 행동 데이터로 오디언스를 세분화(복귀작·유사 장르 기열람자)해 단순 광범위 타겟팅을 대체</li>
+          <li><strong>행동 데이터 리타겟팅</strong>: 플랫폼 외부의 오가닉 검색 인텐트(Anime 연관 키워드)를 포착해 IP 매칭 리타겟팅으로 연결</li>
         </ul>
 
         <div class="viz">
-          <div class="viz-grid">
-            <figure>
-              <div class="chart-title">기존 의존형 믹스 — CPA 악화</div>
-              <svg viewBox="0 0 300 190" role="img" aria-label="Meta와 Google CPA 상승 막대그래프">
-                <line x1="30" y1="160" x2="280" y2="160" stroke="#E2E6EC" stroke-width="1.5"/>
-                <rect x="75" y="40" width="56" height="120" rx="5" fill="#1E3A5F"/>
-                <rect x="175" y="64" width="56" height="96" rx="5" fill="#A9B6C6"/>
-                <text x="103" y="30" text-anchor="middle" font-size="13" font-weight="700" fill="#C0392B">CPA ↑15%</text>
-                <text x="203" y="54" text-anchor="middle" font-size="13" font-weight="700" fill="#C0392B">CPA ↑12%</text>
-                <text x="103" y="180" text-anchor="middle" font-size="12.5" fill="#64748B">Meta</text>
-                <text x="203" y="180" text-anchor="middle" font-size="12.5" fill="#64748B">Google</text>
-              </svg>
-              <figcaption>2개 매체 의존 → 단가 상승에 무방비</figcaption>
-            </figure>
-            <figure>
-              <div class="chart-title">최적화된 다각화 믹스 — CPA -32% (YoY)</div>
-              <svg viewBox="0 0 300 190" role="img" aria-label="다각화된 미디어 믹스 도넛 차트">
-                <g transform="rotate(-90 150 92)">
-                  <circle cx="150" cy="92" r="54" fill="none" stroke="#1E3A5F" stroke-width="26" stroke-dasharray="118.75 339.29"/>
-                  <circle cx="150" cy="92" r="54" fill="none" stroke="#0B8A5C" stroke-width="26" stroke-dasharray="84.82 339.29" stroke-dashoffset="-118.75"/>
-                  <circle cx="150" cy="92" r="54" fill="none" stroke="#7BC4A4" stroke-width="26" stroke-dasharray="84.82 339.29" stroke-dashoffset="-203.57"/>
-                  <circle cx="150" cy="92" r="54" fill="none" stroke="#A9B6C6" stroke-width="26" stroke-dasharray="50.9 339.29" stroke-dashoffset="-288.39"/>
-                </g>
-                <text x="150" y="88" text-anchor="middle" font-size="17" font-weight="800" fill="#0B8A5C">-32%</text>
-                <text x="150" y="106" text-anchor="middle" font-size="10.5" fill="#64748B">CPA YoY</text>
-              </svg>
-              <div class="legend">
-                <span><i style="background:#1E3A5F"></i>Meta 35%</span>
-                <span><i style="background:#0B8A5C"></i>TikTok 25% <em style="font-style:normal;color:#0B8A5C;font-weight:700">NEW</em></span>
-                <span><i style="background:#7BC4A4"></i>Google 25%</span>
-                <span><i style="background:#A9B6C6"></i>Pinterest 15% <em style="font-style:normal;color:#0B8A5C;font-weight:700">NEW</em></span>
-              </div>
-            </figure>
-          </div>
-        </div>
-
-        <h3>Result</h3>
-        <p>전년 대비(YoY) 신규 유저 획득 CPA <strong>32% 절감</strong>을 달성하고, Meta/Google 의존도를 탈피한 지속 가능한 매체 다각화 구조를 구축했습니다.</p>
-      </div>
-      <div class="kpis">
-        <div class="kpi"><div class="v">-32%</div><div class="k">신규 유저 획득 CPA (YoY)</div></div>
-        <div class="kpi"><div class="v">4채널</div><div class="k">다각화된 미디어 믹스</div></div>
-      </div>
-    </section>
-
-    <!-- 2. Content-centric UA -->
-    <section class="project" id="content-ua">
-      <div class="cat-row"><div class="cat">02 · Content-centric UA</div><span class="contrib">기여도 100%</span></div>
-      <div class="proj-head"><h2>킬러 IP 기반 타겟팅</h2></div>
-      <div class="proj-body">
-        <h3>Problem</h3>
-        <p>고부가가치 킬러 콘텐츠의 매출을 극대화하는 데 한계가 있었고, 단순 광범위 타겟팅(Broad Targeting)으로는 전환 효율이 저하되고 있었습니다.</p>
-        <h3>Strategy</h3>
-        <ul>
-          <li>유저 행동 데이터를 기반으로 오디언스를 세분화: <strong>① 시즌 복귀작 기열람자 타겟팅</strong>, <strong>② 유사 장르 IP 선호 유저 타겟팅</strong></li>
-        </ul>
-
-        <div class="viz">
-          <div class="chart-title">타겟팅 방식별 ROAS 비교</div>
+          <div class="chart-title">타겟팅 방식별 ROAS — 행동 데이터 기반의 압도적 효율</div>
           <svg viewBox="0 0 480 230" role="img" aria-label="광범위 타겟팅 대비 행동 데이터 타겟팅 ROAS 비교 막대그래프">
             <line x1="40" y1="195" x2="450" y2="195" stroke="#E2E6EC" stroke-width="1.5"/>
             <rect x="80" y="169" width="70" height="26" rx="5" fill="#A9B6C6"/>
@@ -770,54 +708,23 @@ header.hero{position:relative}
         </div>
 
         <h3>Result</h3>
-        <p>유사 장르 기열람자 타겟팅 ROAS <strong>229% 수직 상승</strong>, 복귀작 기열람자 타겟팅 ROAS <strong>101% 상승</strong>과 함께 핵심 액션 장르 매출 TOP 3를 달성했습니다.</p>
-        <div class="insight"><span class="lbl">Key Insight</span>콘텐츠 속성(장르, 화풍, 스토리)과 유저의 과거 소비 데이터를 결합한 <b>'콘텐츠 친화도 타겟팅'</b>이 광범위 타겟팅보다 압도적인 ROAS를 창출합니다.</div>
-      </div>
-      <div class="kpis">
-        <div class="kpi"><div class="v">+229%</div><div class="k">유사 장르 기열람자 ROAS</div></div>
-        <div class="kpi"><div class="v">+101%</div><div class="k">복귀작 기열람자 ROAS</div></div>
-        <div class="kpi"><div class="v">TOP 3</div><div class="k">핵심 액션 장르 매출</div></div>
-      </div>
-    </section>
-
-    <!-- 3. Retargeting Strategy -->
-    <section class="project" id="retargeting">
-      <div class="cat-row"><div class="cat">03 · Retargeting Strategy</div><span class="contrib">기여도 100%</span></div>
-      <div class="proj-head"><h2>행동 데이터 기반 고가치 유저 발굴</h2></div>
-      <div class="proj-body">
-        <h3>Problem</h3>
-        <p>플랫폼 매출을 강력하게 견인할 고관여 콘텐츠의 수익 극대화 모델이 부재했습니다.</p>
-        <h3>Strategy</h3>
         <ul>
-          <li>오가닉 검색량 급증 트렌드를 활용한 <strong>행동 데이터 기반 리타겟팅</strong> 발굴 — Anime 연관 키워드 검색 유저 타겟팅</li>
+          <li>매체 다각화로 신규 유저 획득 CPA <strong>YoY 32% 절감</strong>, Meta/Google 의존 구조 탈피</li>
+          <li>콘텐츠 친화도 타겟팅으로 ROAS <strong>최대 229% 상승</strong>(유사 장르), 핵심 액션 장르 매출 TOP 3 달성</li>
+          <li>행동 데이터 리타겟팅으로 연관 키워드 오가닉 검색량 <strong>10배</strong>, 소셜 방문자 ROAS <strong>MoM +132%</strong></li>
         </ul>
-
-        <div class="viz">
-          <div class="chart-title">런칭 캠페인 후 연관 키워드 오가닉 검색량</div>
-          <svg viewBox="0 0 480 220" role="img" aria-label="검색량 10배 상승 추이 곡선">
-            <line x1="40" y1="190" x2="450" y2="190" stroke="#E2E6EC" stroke-width="1.5"/>
-            <line x1="40" y1="190" x2="40" y2="20" stroke="#E2E6EC" stroke-width="1.5"/>
-            <path d="M45,182 C170,178 290,140 425,38" fill="none" stroke="#0B8A5C" stroke-width="4" stroke-linecap="round"/>
-            <path d="M413,36 L428,35 L424,50" fill="none" stroke="#0B8A5C" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
-            <text x="220" y="80" font-size="34" font-weight="800" fill="#0B8A5C">10x</text>
-            <text x="30" y="110" font-size="11.5" fill="#64748B" transform="rotate(-90 30 110)" text-anchor="middle">Search Volume</text>
-            <text x="245" y="208" text-anchor="middle" font-size="11.5" fill="#64748B">Time (캠페인 런칭 이후)</text>
-          </svg>
-        </div>
-
-        <h3>Result</h3>
-        <p>런칭 캠페인 이후 연관 키워드의 구글 오가닉 검색량이 <strong>10배 상승</strong>했고, 소셜 미디어 방문자 ROAS가 <strong>MoM +132%</strong>로 폭발적으로 성장했습니다.</p>
-        <div class="insight"><span class="lbl">Key Insight</span>플랫폼 외부의 오가닉 검색 인텐트(Intent)를 포착해 정교한 IP 매칭 리타겟팅과 결합하면, <b>폭발적인 수익 창출 루프</b>가 형성됩니다.</div>
+        <div class="insight"><span class="lbl">Key Insight</span>콘텐츠 속성과 유저의 과거 소비·검색 인텐트 데이터를 결합한 <b>'콘텐츠 친화도 타겟팅'</b>이 단순 광범위 타겟팅보다 압도적인 ROAS를 만듭니다.</div>
       </div>
       <div class="kpis">
-        <div class="kpi"><div class="v">10x</div><div class="k">연관 키워드 오가닉 검색량</div></div>
-        <div class="kpi"><div class="v">+132%</div><div class="k">소셜 방문자 ROAS (MoM)</div></div>
+        <div class="kpi"><div class="v">-32%</div><div class="k">신규 유저 획득 CPA (YoY)</div></div>
+        <div class="kpi"><div class="v">+229%</div><div class="k">콘텐츠 친화도 타겟팅 ROAS</div></div>
+        <div class="kpi"><div class="v">10x</div><div class="k">리타겟팅 오가닉 검색량</div></div>
       </div>
     </section>
 
-    <!-- 4. Monetization Optimization -->
+    <!-- 2. Monetization Optimization -->
     <section class="project" id="monetization">
-      <div class="cat-row"><div class="cat">04 · Monetization Optimization</div><span class="contrib">기여도 100%</span></div>
+      <div class="cat-row"><div class="cat">02 · Monetization Optimization</div><span class="contrib">기여도 100%</span></div>
       <div class="proj-head"><h2>리타겟팅 윈도우 과감한 축소를 통한 결제 가속화</h2></div>
       <div class="proj-body">
         <h3>Strategy</h3>
@@ -872,9 +779,9 @@ header.hero{position:relative}
       </div>
     </section>
 
-    <!-- 5. Data Infrastructure -->
+    <!-- 3. Data Infrastructure -->
     <section class="project" id="data">
-      <div class="cat-row"><div class="cat">05 · Data Infrastructure</div><span class="contrib">기여도 100%</span></div>
+      <div class="cat-row"><div class="cat">03 · Data Infrastructure</div><span class="contrib">기여도 100%</span></div>
       <div class="proj-head"><h2>코호트 누적 매출 트래킹 및 핵심 타이틀 매출 증대</h2></div>
       <div class="proj-body">
         <h3>Strategy</h3>
@@ -930,9 +837,9 @@ header.hero{position:relative}
       </div>
     </section>
 
-    <!-- 6. ATT Measurement Strategy -->
+    <!-- 4. ATT Measurement Strategy -->
     <section class="project" id="att">
-      <div class="cat-row"><div class="cat">06 · Measurement Strategy</div><span class="contrib">기여도 100%</span></div>
+      <div class="cat-row"><div class="cat">04 · Measurement Strategy</div><span class="contrib">기여도 100%</span></div>
       <div class="proj-head"><h2>ATT 이후 iOS 측정 환경 변화 대응 및 퍼스트파티 데이터 기반 성과 분석 체계 구축</h2></div>
       <div class="proj-body">
         <h3>Problem</h3>
@@ -991,11 +898,13 @@ header.hero{position:relative}
       </div>
     </section>
     <section class="project" id="crm">
-      <div class="cat-row"><div class="cat">07 · CRM Optimization</div><span class="contrib">기여도 90%<span class="note">운영 협업</span></span></div>
+      <div class="cat-row"><div class="cat">05 · CRM Optimization</div><span class="contrib">기여도 90%<span class="note">운영 협업</span></span></div>
       <div class="proj-head"><h2>SQL 기반 퍼널 바틀넥 진단 및 활성 유저 볼륨 극대화</h2></div>
       <div class="proj-body">
+        <h3>Approach</h3>
+        <p>데이터 분석의 기반에는 <strong>데이터 구조(ERD)에 대한 이해</strong>가 있습니다. 유저·결제 로그 등 여러 테이블이 어떻게 연결되는지를 먼저 파악하고, 그 구조 위에서 <strong>SQL을 도구로 활용</strong>해 분석을 설계합니다. 이 프로젝트는 그 역량이 실제 퍼널 병목 진단으로 이어진 사례입니다.</p>
         <h3>Problem</h3>
-        <p>신규 획득 유저가 활성 유저로 전환되는 퍼널에서 <strong>'첫 결제(First Purchase)'가 핵심 병목 지점</strong>임을 SQL 기반 분석으로 진단했습니다.</p>
+        <p>신규 획득 유저가 활성 유저로 전환되는 퍼널에서, 테이블 간 관계를 기반으로 결제 흐름을 분석한 결과 <strong>'첫 결제(First Purchase)'가 핵심 병목 지점</strong>임을 진단했습니다.</p>
 
         <div class="viz">
           <div class="chart-title">퍼널 병목 진단</div>
@@ -1012,20 +921,31 @@ header.hero{position:relative}
 
         <h3>Strategy</h3>
         <ul>
-          <li>SQL 쿼리로 결제 로그를 직접 분석해 <strong>고관여 미결제 유저 세그먼트</strong>를 추출</li>
+          <li>여러 테이블(유저·결제 로그)의 관계를 이해한 상태에서 <strong>SQL 조인 쿼리로 고관여 미결제 유저 세그먼트</strong>를 직접 추출</li>
           <li>타겟팅 프로모션(CRM) 전개: <strong>첫 결제 시 50% 캐시백 자동화</strong></li>
         </ul>
 
-        <div class="codebox" role="img" aria-label="결제 로그 분석 SQL 쿼리">
-          <div class="head"><span class="dot" style="background:#FF5F57"></span><span class="dot" style="background:#FEBC2E"></span><span class="dot" style="background:#28C840"></span>&nbsp;funnel_bottleneck_analysis.sql</div>
-<span class="kw">SELECT</span> us.id, us.email, <span class="fn">sum</span>(payment_log.payment_count)<br>
-<span class="kw">FROM</span> user <span class="kw">AS</span> us<br>
-<span class="kw">JOIN</span> payment_log <span class="kw">AS</span> sep_payment <span class="kw">ON</span> us.id = sep_payment.user_id<br>
-<span class="kw">JOIN</span> payment_log <span class="kw">AS</span> oct_payment <span class="kw">ON</span> us.id = oct_payment.user_id<br>
-<span class="kw">WHERE</span> sep_payment.created_at <span class="kw">BETWEEN</span> <span class="str">1693612800000</span> <span class="kw">AND</span> <span class="str">1696118400000</span><br>
-&nbsp;&nbsp;<span class="kw">AND</span> oct_payment.created_at <span class="kw">BETWEEN</span> <span class="str">1696204800000</span> <span class="kw">AND</span> <span class="str">1698796800000</span><br>
-<span class="kw">GROUP BY</span> us.id, us.email;
+        <div class="codebox" role="img" aria-label="고관여 미결제 유저 세그먼트 추출 SQL 쿼리">
+          <div class="head"><span class="dot" style="background:#FF5F57"></span><span class="dot" style="background:#FEBC2E"></span><span class="dot" style="background:#28C840"></span>&nbsp;high_intent_non_payers.sql</div>
+<span class="kw">WITH</span> user_activity <span class="kw">AS</span> (<br>
+&nbsp;&nbsp;<span class="kw">SELECT</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;u.id <span class="kw">AS</span> user_id,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">COUNT</span>(<span class="kw">DISTINCT</span> v.episode_id) <span class="kw">AS</span> viewed_episodes,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">COUNT</span>(<span class="kw">DISTINCT</span> v.title_id)   <span class="kw">AS</span> viewed_titles,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">SUM</span>(<span class="kw">CASE WHEN</span> p.id <span class="kw">IS NOT NULL THEN</span> <span class="str">1</span> <span class="kw">ELSE</span> <span class="str">0</span> <span class="kw">END</span>) <span class="kw">AS</span> payment_cnt<br>
+&nbsp;&nbsp;<span class="kw">FROM</span> users u<br>
+&nbsp;&nbsp;<span class="kw">LEFT JOIN</span> view_log v   <span class="kw">ON</span> u.id = v.user_id<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">AND</span> v.viewed_at <span class="kw">&gt;=</span> <span class="fn">NOW</span>() <span class="kw">-</span> <span class="kw">INTERVAL</span> <span class="str">'30 days'</span><br>
+&nbsp;&nbsp;<span class="kw">LEFT JOIN</span> payment_log p <span class="kw">ON</span> u.id = p.user_id<br>
+&nbsp;&nbsp;<span class="kw">GROUP BY</span> u.id<br>
+)<br>
+<span class="kw">SELECT</span> user_id, viewed_episodes, viewed_titles<br>
+<span class="kw">FROM</span> user_activity<br>
+<span class="kw">WHERE</span> payment_cnt = <span class="str">0</span>&nbsp;&nbsp;<span class="cmt">-- 미결제 유저</span><br>
+<span class="kw">HAVING</span> viewed_episodes <span class="kw">&gt;=</span> <span class="str">20</span>&nbsp;&nbsp;<span class="cmt">-- 고관여 임계치</span><br>
+<span class="kw">ORDER BY</span> viewed_episodes <span class="kw">DESC</span>;
         </div>
+        <p style="font-size:13px;color:var(--muted);margin-top:10px">users·view_log·payment_log 테이블의 관계를 이해한 뒤, CTE로 유저별 30일 열람량과 결제 여부를 집계하고 '활동량은 높지만 미결제'인 고관여 유저 세그먼트를 직접 도출한 쿼리입니다.</p>
 
         <h3>Result</h3>
         <p>고관여 미결제 유저 타겟팅으로 DAU/MAU가 <strong>113% 대폭 개선</strong>되었고, 타겟 프로모션 전개로 첫 결제 전환율(CVR)이 <strong>13%p 상승</strong>했습니다.</p>
@@ -1036,9 +956,9 @@ header.hero{position:relative}
       </div>
     </section>
 
-    <!-- 8. Creative A/B Test -->
+    <!-- 6. Creative A/B Test -->
     <section class="project" id="abtest">
-      <div class="cat-row"><div class="cat">08 · Creative A/B Test</div><span class="contrib">기여도 80%<span class="note">디자이너 협업</span></span></div>
+      <div class="cat-row"><div class="cat">06 · Creative A/B Test</div><span class="contrib">기여도 80%<span class="note">디자이너 협업</span></span></div>
       <div class="proj-head"><h2>장르별 고성과 소재 포맷 도출</h2></div>
       <div class="proj-body">
         <h3>Strategy</h3>
@@ -1088,9 +1008,9 @@ header.hero{position:relative}
       </div>
     </section>
 
-    <!-- 9. Lifecycle Marketing -->
+    <!-- 7. Lifecycle Marketing -->
     <section class="project" id="lifecycle">
-      <div class="cat-row"><div class="cat">09 · Lifecycle Marketing</div><span class="contrib">기여도 80%<span class="note">운영 협업</span></span></div>
+      <div class="cat-row"><div class="cat">07 · Lifecycle Marketing</div><span class="contrib">기여도 80%<span class="note">운영 협업</span></span></div>
       <div class="proj-head"><h2>유저 스테이지별 세분화된 CRM 메시징 맵</h2></div>
       <div class="proj-body">
         <h3>Strategy</h3>
