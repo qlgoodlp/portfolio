@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B8A5C'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='27' font-weight='800' fill='white' text-anchor='middle'%3EHK%3C/text%3E%3C/svg%3E">
+<title>Hyunji Kim — Growth Marketing Portfolio</title>
+<meta name="description" content="Performance marketer with 5+ years driving growth via Google, Meta, Naver & Kakao — CAC -32%, ROAS +229%, revenue +83% in subscription content apps. Hyunji Kim's portfolio.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hyunji Kim — Performance Marketer Portfolio">
+<meta property="og:description" content="CAC -32% · ROAS +229% · Revenue +83% — Full-funnel growth marketing case studies across Google, Meta, Naver & Kakao, plus AI automation.">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hyunji Kim — Performance Marketer Portfolio">
+<meta name="twitter:description" content="Full-funnel growth marketing case studies across Google, Meta, Naver & Kakao, plus AI automation">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+
+:root{
+  --bg:#F7F8FA;
+  --surface:#FFFFFF;
+  --ink:#16202E;
+  --muted:#64748B;
+  --line:#E2E6EC;
+  --accent:#0B8A5C;
+  --accent-soft:#E4F4EE;
+  --navy:#1E3A5F;
+  --green-l:#7BC4A4;
+  --slate:#A9B6C6;
+  --gold:#E0B94B;
+  --red:#C0392B;
+  --body:#3A4657;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Noto Sans KR",-apple-system,BlinkMacSystemFont,system-ui,sans-serif;
+  line-height:1.7;
+  font-size:16px;
+}
+.mono{font-family:"IBM Plex Mono",monospace}
+
+/* ---------- layout ---------- */
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+main{display:flex;gap:56px;align-items:flex-start}
+.content{flex:1;min-width:0}
+
+/* ---------- side nav ---------- */
+.sidenav{
+  position:sticky;top:48px;width:208px;flex-shrink:0;
+  display:flex;flex-direction:column;gap:2px;
+}
+.sidenav a{
+  text-decoration:none;color:var(--muted);
+  font-size:13px;padding:7px 12px;border-left:2px solid var(--line);
+  transition:all .15s ease;
+}
+.sidenav a:hover,.sidenav a.active{color:var(--accent);border-left-color:var(--accent);background:var(--accent-soft)}
+.sidenav .nav-label{font-size:11px;letter-spacing:.12em;color:var(--muted);padding:0 12px 10px;text-transform:uppercase}
+
+/* ---------- hero ---------- */
+header.hero{
+  border-bottom:1px solid var(--line);
+  background:var(--surface);
+  padding:88px 0 60px;
+}
+.hero .eyebrow{
+  font-size:12px;letter-spacing:.18em;color:var(--accent);
+  text-transform:uppercase;margin-bottom:20px;font-weight:600;
+}
+.hero h1{
+  font-size:clamp(32px,5.5vw,54px);
+  font-weight:800;letter-spacing:-0.02em;line-height:1.18;
+  margin-bottom:20px;
+}
+.hero h1 .accent{color:var(--accent)}
+.hero p.lede{max-width:680px;color:var(--muted);font-size:17px;margin-bottom:30px}
+.hero .contact{display:flex;flex-wrap:wrap;gap:10px}
+.hero .contact a{
+  font-size:13px;text-decoration:none;color:var(--ink);
+  border:1px solid var(--line);border-radius:999px;padding:7px 16px;
+  background:var(--bg);transition:all .15s;
+}
+.hero .contact a:hover{border-color:var(--accent);color:var(--accent)}
+
+.metric-strip{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  margin-top:44px;background:var(--bg);
+}
+.metric{padding:18px 20px;border-right:1px solid var(--line)}
+.metric:last-child{border-right:none}
+.metric .num{font-size:22px;font-weight:600;color:var(--accent)}
+.metric .lbl{font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* ---------- sections ---------- */
+section.project{
+  background:var(--surface);
+  border:1px solid var(--line);
+  border-radius:14px;
+  padding:40px 44px;
+  margin-bottom:28px;
+  scroll-margin-top:48px;
+}
+.cat{
+  font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin-bottom:8px;
+  font-family:"IBM Plex Mono",monospace;
+}
+.cat-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+.cat-row .cat{margin-bottom:0}
+.contrib{
+  display:inline-flex;align-items:center;gap:7px;flex-shrink:0;
+  font-size:11.5px;font-weight:700;color:var(--accent);
+  background:var(--accent-soft);border-radius:999px;padding:4px 12px;
+  font-family:"IBM Plex Mono",monospace;letter-spacing:.02em;
+}
+.contrib .note{
+  font-family:"Noto Sans KR",sans-serif;font-weight:500;color:var(--muted);
+  letter-spacing:0;padding-left:7px;border-left:1px solid #BFE3D4;
+}
+.proj-head h2{font-size:23px;font-weight:700;letter-spacing:-0.01em;margin-bottom:18px}
+.proj-body h3{
+  font-size:13px;font-weight:700;margin:24px 0 8px;color:var(--ink);
+  letter-spacing:.06em;text-transform:uppercase;
+  display:flex;align-items:center;gap:8px;
+}
+.proj-body h3::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--accent);flex-shrink:0}
+.proj-body p{color:var(--body);font-size:15px}
+.proj-body ul{padding-left:20px;color:var(--body);font-size:15px}
+.proj-body li{margin:7px 0}
+.proj-body strong{color:var(--ink)}
+
+.insight{
+  margin-top:24px;background:var(--bg);border-left:3px solid var(--accent);
+  border-radius:0 10px 10px 0;padding:14px 18px;
+  font-size:14px;color:var(--body);
+}
+.insight b{color:var(--ink)}
+.insight .lbl{font-size:11px;letter-spacing:.1em;color:var(--accent);font-weight:700;display:block;margin-bottom:4px;text-transform:uppercase}
+
+.kpis{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;padding-top:20px;border-top:1px dashed var(--line)}
+.kpi{
+  border:1px solid var(--line);border-radius:10px;
+  padding:12px 18px;background:var(--bg);min-width:150px;flex:1;
+}
+.kpi .v{font-weight:600;font-size:19px;color:var(--accent);font-family:"IBM Plex Mono",monospace}
+.kpi .k{font-size:12.5px;color:var(--muted);margin-top:2px}
+
+/* ---------- charts ---------- */
+.viz{
+  margin-top:22px;background:var(--bg);border:1px solid var(--line);
+  border-radius:12px;padding:24px;
+}
+.viz-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.viz figcaption,.viz .cap{font-size:12.5px;color:var(--muted);text-align:center;margin-top:10px}
+.viz svg{display:block;width:100%;height:auto}
+.viz .chart-title{font-size:13px;font-weight:700;color:var(--ink);text-align:center;margin-bottom:12px}
+.legend{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:12px;font-size:12px;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:10px;height:10px;border-radius:3px;display:inline-block}
+
+/* SQL code block */
+.codebox{
+  margin-top:22px;background:#1A2230;border-radius:12px;padding:20px 22px;
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;line-height:1.8;
+  color:#D7DEE8;overflow-x:auto;
+}
+.codebox .kw{color:#6FB8FF}.codebox .fn{color:#7BC4A4}.codebox .str{color:#E0B94B}.codebox .cmt{color:#7E8A9A;font-style:italic}
+.codebox .head{color:#8B97A8;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:10px;display:flex;align-items:center;gap:8px}
+.codebox .dot{width:8px;height:8px;border-radius:50%;display:inline-block}
+
+/* lifecycle stage map */
+.stage-map{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:22px}
+.stage{
+  background:var(--bg);border:1px solid var(--line);border-radius:12px;
+  padding:18px;position:relative;
+}
+.stage .st-head{
+  font-size:12px;font-weight:700;color:#fff;background:var(--navy);
+  border-radius:8px;padding:7px 12px;margin-bottom:12px;line-height:1.45;
+}
+.stage .pain{font-size:13px;color:var(--body);margin-bottom:12px}
+.stage .pain b{display:block;font-size:11px;letter-spacing:.08em;color:var(--muted);text-transform:uppercase;margin-bottom:2px}
+.stage .strat{
+  font-size:13px;font-weight:600;border-radius:8px;padding:8px 12px;line-height:1.5;
+}
+.stage:nth-child(1) .strat{background:var(--accent-soft);color:var(--accent)}
+.stage:nth-child(2) .strat{background:#E6EEF8;color:var(--navy)}
+.stage:nth-child(3) .strat{background:#FAE9E6;color:var(--red)}
+.stage:not(:last-child)::after{
+  content:"→";position:absolute;right:-15px;top:50%;transform:translateY(-50%);
+  color:var(--muted);font-size:16px;z-index:1;
+}
+
+/* ---------- expertise chips ---------- */
+.expertise{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.expertise span{
+  font-size:13px;font-weight:600;color:var(--accent);
+  background:var(--accent-soft);border-radius:999px;padding:6px 16px;
+}
+
+/* ---------- career timeline ---------- */
+.timeline{margin-top:8px}
+.tl-item{
+  display:flex;gap:20px;position:relative;padding:0 0 26px 26px;
+  border-left:2px solid var(--line);
+}
+.tl-item:last-child{padding-bottom:4px}
+.tl-item::before{
+  content:"";position:absolute;left:-7px;top:6px;
+  width:12px;height:12px;border-radius:50%;
+  background:var(--surface);border:3px solid var(--accent);
+}
+.tl-item .period{
+  font-family:"IBM Plex Mono",monospace;font-size:12.5px;color:var(--muted);
+  width:150px;flex-shrink:0;padding-top:2px;
+}
+.tl-item .co{font-size:16.5px;font-weight:700;color:var(--ink)}
+.tl-item .co .now{
+  font-size:11px;font-weight:700;color:var(--accent);background:var(--accent-soft);
+  border-radius:999px;padding:2px 10px;margin-left:8px;vertical-align:2px;
+}
+.tl-item .desc{font-size:14px;color:var(--body);margin-top:3px}
+
+/* ---------- skills grid ---------- */
+.skill-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px}
+.skill-card{
+  background:var(--bg);border:1px solid var(--line);border-radius:12px;
+  padding:20px 22px;
+}
+.skill-card h4{
+  font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--accent);margin-bottom:12px;
+}
+.skill-card ul{list-style:none;padding:0}
+.skill-card li{
+  font-size:14px;color:var(--body);padding:4px 0 4px 16px;position:relative;
+}
+.skill-card li::before{content:"·";position:absolute;left:2px;color:var(--accent);font-weight:800}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chips span{
+  font-size:12.5px;color:var(--ink);background:var(--surface);
+  border:1px solid var(--line);border-radius:999px;padding:4px 12px;
+}
+.chips .chip-lbl{
+  border:none;background:none;padding:4px 0;color:var(--muted);
+  font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  width:100%;
+}
+.rating{display:flex;justify-content:space-between;align-items:center;padding:5px 0;font-size:14px;color:var(--body)}
+.rating .stars{font-size:13px;letter-spacing:2px;color:var(--accent)}
+.rating .stars .off{color:#CBD5E0}
+
+@media (max-width:680px){
+  .skill-grid{grid-template-columns:1fr}
+  .tl-item{flex-direction:column;gap:2px}
+  .tl-item .period{width:auto}
+}
+
+/* ---------- AI pipeline ---------- */
+.pipeline{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:22px}
+.pipe-step{
+  background:var(--bg);border:1px solid var(--line);border-radius:12px;
+  padding:18px;position:relative;text-align:center;
+}
+.pipe-step .icon{font-size:22px;margin-bottom:8px}
+.pipe-step .t{font-size:14px;font-weight:700;color:var(--ink);margin-bottom:4px}
+.pipe-step .d{font-size:12.5px;color:var(--muted);line-height:1.5}
+.pipe-step:not(:last-child)::after{
+  content:"→";position:absolute;right:-15px;top:50%;transform:translateY(-50%);
+  color:var(--accent);font-size:16px;font-weight:700;z-index:1;
+}
+.slack-mock{
+  margin-top:18px;background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;padding:18px 20px;
+  box-shadow:0 1px 3px rgba(22,32,46,.05);
+}
+.slack-mock .sm-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.slack-mock .sm-avatar{
+  width:34px;height:34px;border-radius:8px;background:var(--accent);
+  color:#fff;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:15px;flex-shrink:0;
+}
+.slack-mock .sm-name{font-size:13.5px;font-weight:700;color:var(--ink)}
+.slack-mock .sm-name em{
+  font-style:normal;font-size:10px;font-weight:700;color:var(--muted);
+  background:var(--bg);border:1px solid var(--line);border-radius:4px;
+  padding:1px 5px;margin-left:6px;vertical-align:1px;
+}
+.slack-mock .sm-time{font-size:11.5px;color:var(--muted)}
+.slack-mock .sm-body{font-size:13.5px;color:var(--body);line-height:1.75}
+.slack-mock .sm-body b{color:var(--ink)}
+.slack-mock .sm-tag{
+  display:inline-block;font-size:11px;color:var(--muted);
+  border:1px dashed var(--line);border-radius:6px;padding:1px 8px;margin-top:10px;
+}
+@media (max-width:680px){
+  .pipeline{grid-template-columns:1fr}
+  .pipe-step:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-22px;transform:translateX(-50%)}
+  .pipeline{row-gap:26px}
+}
+
+/* ---------- dashboard mock ---------- */
+.dash-mock{
+  margin-top:18px;background:var(--surface);border:1px solid var(--line);
+  border-radius:12px;padding:20px 22px;
+  box-shadow:0 1px 3px rgba(22,32,46,.05);
+}
+.dash-mock .dm-title{font-size:15px;font-weight:800;color:var(--ink);margin-bottom:14px}
+.dash-controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
+.dash-controls .ctrl{font-size:11.5px;color:var(--muted)}
+.dash-controls .ctrl .box{
+  margin-top:4px;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+  padding:8px 12px;font-size:13px;color:var(--ink);font-weight:600;
+  display:flex;justify-content:space-between;align-items:center;
+}
+.dash-controls .ctrl .box i{font-style:normal;color:var(--muted);font-weight:400}
+.dash-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+.dash-card{
+  border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--bg);
+}
+.dash-card .thumb{
+  height:74px;display:flex;align-items:center;justify-content:center;
+  font-size:11px;color:#fff;font-weight:700;letter-spacing:.06em;
+}
+.dash-card:nth-child(1) .thumb{background:linear-gradient(135deg,#1E3A5F,#3A5A8C)}
+.dash-card:nth-child(2) .thumb{background:linear-gradient(135deg,#0B8A5C,#3FAE85)}
+.dash-card:nth-child(3) .thumb{background:linear-gradient(135deg,#64748B,#94A3B8)}
+.dash-card .dc-body{padding:10px 12px}
+.dash-card .dc-name{font-size:12px;font-weight:700;color:var(--ink);margin-bottom:6px;font-family:"IBM Plex Mono",monospace}
+.dash-card .dc-metrics{font-size:11.5px;color:var(--muted);line-height:1.7}
+.dash-card .dc-metrics b{color:var(--accent);font-weight:700}
+@media (max-width:680px){
+  .dash-cards{grid-template-columns:1fr}
+  .dash-controls{grid-template-columns:1fr}
+}
+
+/* ---------- project overview ---------- */
+.overview{
+  background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:32px 36px;margin-bottom:28px;scroll-margin-top:48px;
+}
+.overview h2{font-size:20px;font-weight:700;margin-bottom:4px;letter-spacing:-0.01em}
+.overview .ov-sub{font-size:13.5px;color:var(--muted);margin-bottom:20px}
+.ov-list{display:flex;flex-direction:column;gap:0}
+.ov-item{
+  display:flex;align-items:center;gap:18px;
+  padding:15px 12px;border-top:1px solid var(--line);text-decoration:none;
+  transition:background .15s ease;border-radius:8px;
+}
+.ov-item .ov-no{flex-shrink:0;width:26px}
+.ov-item .ov-title{flex:1 1 auto;min-width:0}
+.ov-item .ov-metric{flex-shrink:0;width:150px}
+.ov-item:hover{background:var(--accent-soft)}
+.ov-item .ov-no{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;color:var(--accent)}
+.ov-item .ov-title{color:var(--ink);font-size:15px;font-weight:600;line-height:1.4;padding-right:16px}
+.ov-item .ov-title .ov-cat{display:block;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.04em;text-transform:uppercase;margin-bottom:1px;font-family:"IBM Plex Mono",monospace}
+.ov-item .ov-metric{
+  font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:700;color:var(--accent);
+  text-align:right;white-space:nowrap;display:flex;flex-direction:column;align-items:flex-end;
+}
+.ov-item .ov-metric span{display:block;font-size:11px;font-weight:500;color:var(--muted);font-family:"Noto Sans KR",sans-serif}
+@media (max-width:680px){
+  .overview{padding:24px 20px}
+  .ov-item{grid-template-columns:26px 1fr;gap:10px;row-gap:4px}
+  .ov-item .ov-metric{grid-column:2;text-align:left;font-size:14px}
+}
+
+footer{
+  text-align:center;color:var(--muted);font-size:13px;
+  padding:48px 0 64px;
+}
+
+@media (max-width:860px){
+  .sidenav{display:none}
+  section.project{padding:28px 22px}
+  .metric-strip{grid-template-columns:repeat(2,1fr)}
+  .metric:nth-child(2){border-right:none}
+  .metric:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .viz-grid{grid-template-columns:1fr}
+  .stage-map{grid-template-columns:1fr}
+  .stage:not(:last-child)::after{content:"↓";right:auto;left:50%;top:auto;bottom:-22px;transform:translateX(-50%)}
+  .stage-map{row-gap:26px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ---------- language switch ---------- */
+header.hero{position:relative}
+.lang-switch{
+  position:absolute;top:26px;right:24px;display:flex;gap:2px;
+  border:1px solid var(--line);border-radius:999px;padding:3px;background:var(--bg);
+}
+.lang-switch a{
+  font-size:12px;font-weight:700;text-decoration:none;color:var(--muted);
+  padding:4px 14px;border-radius:999px;
+}
+.lang-switch a.on{background:var(--accent);color:#fff}
+
+/* resume download button */
+.contact a.resume-btn{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600}
+.contact a.resume-btn:hover{background:#09714B;color:#fff}
+
+/* ---------- mobile nav ---------- */
+.mobilenav{display:none}
+@media (max-width:860px){
+  .mobilenav{
+    display:flex;position:sticky;top:0;z-index:60;gap:6px;
+    background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);
+    overflow-x:auto;padding:10px 16px;-webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .mobilenav::-webkit-scrollbar{display:none}
+  .mobilenav a{
+    flex-shrink:0;font-size:12.5px;font-weight:500;color:var(--muted);
+    text-decoration:none;padding:6px 13px;border:1px solid var(--line);
+    border-radius:999px;background:var(--bg);white-space:nowrap;
+  }
+  .mobilenav a.active{color:#fff;background:var(--accent);border-color:var(--accent)}
+  section.project{scroll-margin-top:64px}
+  .lang-switch{top:16px;right:16px}
+}
+
+</style>
+</head>
+<body>
+
+<nav class="mobilenav" aria-label="Mobile Navigation">
+  <a href="#career">Career</a>
+  <a href="#skills">Skills</a>
+  <a href="#ai">AI Tools</a>
+  <a href="#overview">Overview</a>
+  <a href="#ua">Performance UA</a>
+  <a href="#monetization">Monetization</a>
+  <a href="#data">Data</a>
+  <a href="#att">ATT Strategy</a>
+  <a href="#crm">CRM</a>
+  <a href="#abtest">A/B Test</a>
+  <a href="#lifecycle">Lifecycle</a>
+  <a href="#crossgenre">Cross-Genre</a>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="lang-switch" aria-label="Language Selection">
+      <a href="index.html">KO</a>
+      <a class="on" href="cambly.html" aria-current="page">EN</a>
+    </div>
+    <div class="eyebrow">Portfolio · Performance Marketer</div>
+    <h1>Performance Marketer<br>Driving Business Growth, <span class="accent">Hyunji Kim</span></h1>
+    <p class="lede">From creative strategy to full-funnel SQL analytics, I pursue growth engineering that drives measurable business results. With hands-on experience across global platforms (Google, Meta) and Korean local channels (Naver Search Ads, Kakao BizBoard), I lead CAC reduction, ROAS maximization, and retention growth in subscription content and app businesses — managing campaigns end-to-end, autonomously in a remote environment.</p>
+    <div class="expertise">
+      <span>User Acquisition</span>
+      <span>Data Analysis &amp; LTV</span>
+      <span>CRM &amp; Retention</span>
+      <span>SQL &amp; Funnel Optimization</span>
+      <span>Naver · Kakao Campaigns</span>
+    </div>
+    <div class="contact">
+      <a class="resume-btn" href="Resume_HyunjiKim_Cambly_EN.pdf" download>↓ Download Resume</a>
+      <a href="mailto:qlgoodlp@gmail.com">✉ qlgoodlp@gmail.com</a>
+      <a href="tel:01067642287">☎ 010-6764-2287</a>
+      <a href="https://www.linkedin.com/in/hyunji-kim-88646b2b5/" target="_blank" rel="noopener">in LinkedIn</a>
+    </div>
+    <div class="metric-strip">
+      <div class="metric"><div class="num">-32%</div><div class="lbl">New User CAC (YoY)</div></div>
+      <div class="metric"><div class="num">+229%</div><div class="lbl">Content Affinity ROAS</div></div>
+      <div class="metric"><div class="num">+24%</div><div class="lbl">Monthly ARPPU Growth</div></div>
+      <div class="metric"><div class="num">+83%</div><div class="lbl">Key Title Revenue Growth</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="wrap" style="padding-top:56px">
+<main>
+
+  <nav class="sidenav" aria-label="Navigation">
+    <div class="nav-label">Profile</div>
+    <a href="#career">Career</a>
+    <a href="#skills">Skills &amp; Tools</a>
+    <a href="#ai">AI Tools</a>
+    <div class="nav-label" style="padding-top:18px">Projects</div>
+    <a href="#overview">Overview</a>
+    <a href="#ua">Performance UA</a>
+    <a href="#monetization">Monetization</a>
+    <a href="#data">Data Infrastructure</a>
+    <a href="#att">ATT Strategy</a>
+    <a href="#crm">CRM Optimization</a>
+    <a href="#abtest">Creative A/B Test</a>
+    <a href="#lifecycle">Lifecycle Marketing</a>
+    <a href="#crossgenre">Cross-Genre Strategy</a>
+  </nav>
+
+  <div class="content">
+
+    <!-- Career -->
+    <section class="project" id="career">
+      <div class="cat">Career</div>
+      <div class="proj-head"><h2>Career</h2></div>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="period">Jul 2021 — Present</div>
+          <div>
+            <div class="co">Kiddari Studio<span class="now">Current</span></div>
+            <div class="desc">Performance marketing for European content platforms (Germany & France) — drove UA, retargeting, monetization, and CRM projects featured in this portfolio</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="period">Dec 2020 — May 2021</div>
+          <div>
+            <div class="co">Barm Co., Ltd.</div>
+            <div class="desc">Performance Marketer — Managed B2B & B2C performance campaigns across Naver Search Ads (Power Link)·GFA, Kakao BizBoard, Google, Facebook, and Criteo for diverse clients</div>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="period">Aug 2019 — Nov 2019</div>
+          <div>
+            <div class="co">Spigen Korea</div>
+            <div class="desc">Amazon sales & marketing for mobile accessories</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section class="project" id="skills">
+      <div class="cat">Skills &amp; Tools</div>
+      <div class="proj-head"><h2>Skills &amp; Tools</h2></div>
+      <div class="skill-grid">
+        <div class="skill-card">
+          <h4>Performance</h4>
+          <ul>
+            <li>Self-serve campaign management: Facebook, Google, Naver, Kakao & more</li>
+            <li>Proficient in Singular and other tracking tools</li>
+            <li>Creative strategy & production</li>
+            <li>Data & performance reporting</li>
+            <li>Media mix management</li>
+            <li>New channel discovery & onboarding</li>
+            <li>International media & partner communication</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Content</h4>
+          <ul>
+            <li>Local magazine & community marketing</li>
+            <li>Influencer affiliate marketing</li>
+            <li>PR</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h4>Tracking &amp; Media</h4>
+          <div class="chips">
+            <span class="chip-lbl">Tracking Tools</span>
+            <span>GA</span><span>Singular</span><span>Amplitude</span><span>GTM (Google Tag Manager)</span><span>Snowflake</span>
+            <span class="chip-lbl">Media</span>
+            <span>Naver Search Ads</span><span>Naver GFA</span><span>Kakao BizBoard</span><span>Facebook</span><span>Google</span><span>TikTok</span><span>Twitter</span><span>Pinterest</span><span>Snapchat</span><span>Spotify</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Tools &amp; Languages</h4>
+          <div class="rating"><span>Excel</span><span class="stars">★★★★★</span></div>
+          <div class="rating"><span>PPT</span><span class="stars">★★★★★</span></div>
+          <div class="rating"><span>Word</span><span class="stars">★★★★★</span></div>
+          <div class="rating"><span>SQL</span><span class="stars">★★★<span class="off">★★</span></span></div>
+          <div class="rating"><span>Photoshop</span><span class="stars">★★★★<span class="off">★</span></span></div>
+          <div class="rating"><span>Capcut</span><span class="stars">★★★★<span class="off">★</span></span></div>
+          <div class="rating" style="margin-top:10px;padding-top:12px;border-top:1px dashed var(--line)"><span>German</span><span class="stars">★★★★★</span></div>
+          <div class="rating"><span>English</span><span class="stars">★★★★<span class="off">★</span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- AI Utilization -->
+    <section class="project" id="ai">
+      <div class="cat">AI Utilization</div>
+      <div class="proj-head"><h2>Codex-Powered Marketing Automation Dashboard & Daily Insight Bot</h2></div>
+      <div class="proj-body">
+        <p>Built a marketing automation dashboard using OpenAI Codex. It integrates ad data across channels with <strong>Singular cohort data</strong> in a single view, delivers daily Slack insight reports, and tracks top-performing creatives in real time — accelerating data-driven decision making.</p>
+
+        <div class="pipeline">
+          <div class="pipe-step">
+            <div class="icon">📊</div>
+            <div class="t">Data Integration</div>
+            <div class="d">Ad channel data (Meta, Google, etc.)<br>+ Singular cohort data unified</div>
+          </div>
+          <div class="pipe-step">
+            <div class="icon">🤖</div>
+            <div class="t">Codex Analytics Pipeline</div>
+            <div class="d">Daily / 7-day avg / WoW 3-way comparison<br>Anomaly detection · Auto action suggestions</div>
+          </div>
+          <div class="pipe-step">
+            <div class="icon">💬</div>
+            <div class="t">Slack Daily Report</div>
+            <div class="d">Auto-sent every morning at 10 AM<br>Fully automated, zero manual operation</div>
+          </div>
+        </div>
+
+        <h3>Slack Daily Insight Report</h3>
+        <div class="slack-mock" aria-label="Example of the Slack daily insight report in production">
+          <div class="sm-head">
+            <div class="sm-avatar">D</div>
+            <div>
+              <div class="sm-name">Daily Marketing Insight<em>Workflow</em></div>
+              <div class="sm-time"># daily-marketing-report · 10:00 AM</div>
+            </div>
+          </div>
+          <div class="sm-body">
+            📊 <b>Daily Marketing Insight</b><br>
+            Report Date: 2026-06-11 · Comparison: Prior Day / 7-Day Avg / WoW (Same Day Last Week)<br><br>
+            <b>1. Executive Summary</b> — Cost / Revenue / ROAS / Signups / First Purchase / Repurchase 3-way KPI comparison<br>
+            <b>2. Channel Insight</b> — Channel ROAS / Revenue / Signups (Meta, Google, etc.)<br>
+            <b>3. Genre Insight</b> — ROAS / CTR / Signup Rate by genre (RF·HL·BL)<br>
+            <b>4. Audience Insight</b> — ARPPU / Repurchase Rate / ROAS by audience<br>
+            <b>5. Anomaly Alert</b> — Threshold-based anomaly auto-detection<br>
+            <span style="color:#C0392B">⚠ Meta / BL: Revenue drop >20% · Purchase Rate decline — instant alert</span><br>
+            <b>6. Recommended Actions &amp; Opportunity Signals</b> — Data-driven action auto-suggestions<br>
+            <span style="color:#0B8A5C">↗ High ROAS genre: RF (3.45x) · Scalable campaign: Meta HL (2.47x)</span><br>
+            <span style="color:#C0392B">↘ Budget reduction needed: Meta BL (0.79x)</span>
+          </div>
+          <span class="sm-tag">Actual automated report structure in production</span>
+        </div>
+
+        <h3>Creative Performance Dashboard</h3>
+        <p>Alongside the daily report, built a creative-level performance dashboard. It auto-aggregates Spend, CTR, Signup CPA, First Purchase CPA, and ROAS per creative — instantly surfacing <strong>Top 10 High-Performing Creatives</strong> via sort and minimum spend filters to power creative decisions.</p>
+
+        <div class="dash-mock" aria-label="Creative performance dashboard structure mockup">
+          <div class="dm-title">Top 10 High-Performing Creatives</div>
+          <div class="dash-controls">
+            <div class="ctrl">Sort Creatives By<div class="box">ROAS <i>▾</i></div></div>
+            <div class="ctrl">Min Spend<div class="box">100.00 <i>− +</i></div></div>
+          </div>
+          <div class="dash-cards">
+            <div class="dash-card">
+              <div class="thumb">CREATIVE A</div>
+              <div class="dc-body">
+                <div class="dc-name">FB_WD_SG_EP9</div>
+                <div class="dc-metrics">Spend 121.76 · CTR 2.4%<br>First Purchase CPA 0.38 · <b>ROAS 5550%</b></div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="thumb">CREATIVE B</div>
+              <div class="dc-body">
+                <div class="dc-name">FB_CR_1-1-2</div>
+                <div class="dc-metrics">Spend 122.84 · CTR 4.0%<br>First Purchase CPA 0.51 · <b>ROAS 4639%</b></div>
+              </div>
+            </div>
+            <div class="dash-card">
+              <div class="thumb">CREATIVE C</div>
+              <div class="dc-body">
+                <div class="dc-name">FB_CR_EP12-13</div>
+                <div class="dc-metrics">Spend 591.96 · CTR 2.1%<br>First Purchase CPA 0.42 · <b>ROAS 3717%</b></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="insight"><span class="lbl">Impact</span>Unified fragmented ad data and Singular cohort data into a <b>single dashboard</b>, and fully <b>automated</b> manual reporting. Threshold-based <b>anomaly alerts</b> and auto-scaling/reduction campaign <b>suggestions</b> enable action-ready decision making from the moment the workday starts.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">2 Sources Unified</div><div class="k">Ad Data + Singular Cohort</div></div>
+        <div class="kpi"><div class="v">Daily 10AM</div><div class="k">Slack Auto-Report Delivered</div></div>
+        <div class="kpi"><div class="v">6 Modules</div><div class="k">Summary·Channel·Genre·Audience·Anomaly·Action</div></div>
+      </div>
+    </section>
+
+    <!-- Project Overview -->
+    <section class="overview" id="overview">
+      <h2>Project Overview</h2>
+      <div class="ov-sub">8 Projects · Click to view detailed case studies</div>
+      <div class="ov-list">
+        <a class="ov-item" href="#ua"><span class="ov-no">01</span><span class="ov-title"><span class="ov-cat">Performance UA</span>Data-Driven UA Optimization (Diversification · Targeting · Retargeting)</span><span class="ov-metric">ROAS +229%<span>CAC -32% · Search ×10</span></span></a>
+        <a class="ov-item" href="#monetization"><span class="ov-no">02</span><span class="ov-title"><span class="ov-cat">Monetization</span>Payment Acceleration via Retargeting Window Reduction</span><span class="ov-metric">ARPPU +24%<span>Conversions ×8</span></span></a>
+        <a class="ov-item" href="#data"><span class="ov-no">03</span><span class="ov-title"><span class="ov-cat">Data Infrastructure</span>Cohort Revenue Tracking & Revenue Growth</span><span class="ov-metric">Revenue +83%<span>#1 Revenue 3 Months</span></span></a>
+        <a class="ov-item" href="#att"><span class="ov-no">04</span><span class="ov-title"><span class="ov-cat">Measurement Strategy</span>First-Party Analytics Framework Post-ATT</span><span class="ov-metric">First-party<span>Snowflake System</span></span></a>
+        <a class="ov-item" href="#crm"><span class="ov-no">05</span><span class="ov-title"><span class="ov-cat">CRM Optimization</span>SQL-Based Funnel Bottleneck Diagnosis</span><span class="ov-metric">DAU/MAU +113%<span>First-Purchase CVR +13%p</span></span></a>
+        <a class="ov-item" href="#abtest"><span class="ov-no">06</span><span class="ov-title"><span class="ov-cat">Creative A/B Test</span>High-Performing Creative Format by Genre</span><span class="ov-metric">ROAS +163%p<span>Overall Increase</span></span></a>
+        <a class="ov-item" href="#lifecycle"><span class="ov-no">07</span><span class="ov-title"><span class="ov-cat">Lifecycle Marketing</span>Stage-Based CRM Messaging Map</span><span class="ov-metric">CVR +23%<span>Engagement ×10</span></span></a>
+        <a class="ov-item" href="#crossgenre"><span class="ov-no">08</span><span class="ov-title"><span class="ov-cat">Data · CRM · Paid Retargeting</span>Core User Conversion Improvement via Cross-Genre Strategy</span><span class="ov-metric">Core Users +15%<span>LTV +164% · Lifespan ×2.2</span></span></a>
+      </div>
+    </section>
+
+    <!-- 1. Performance UA Optimization -->
+    <section class="project" id="ua">
+      <div class="cat-row"><div class="cat">01 · Performance UA</div><span class="contrib">Contribution 100%</span></div>
+      <div class="proj-head"><h2>Data-Driven UA Optimization — Channel Diversification · Content Affinity Targeting · Behavioral Retargeting</h2></div>
+      <div class="proj-body">
+        <h3>Problem</h3>
+        <p>Heavy reliance on Meta and Google (CAC rising +15% and +12% respectively) combined with broad targeting was causing structural deterioration in CAC and conversion efficiency.</p>
+        <h3>Strategy</h3>
+        <ul>
+          <li><strong>Channel Diversification</strong>: Introduced TikTok & Pinterest to create a 4-channel mix (Meta 35 / TikTok 25 / Google 25 / Pinterest 15)</li>
+          <li><strong>Content Affinity Targeting</strong>: Segmented audiences by behavioral data (previously-read works, similar genres) to replace broad targeting</li>
+          <li><strong>Behavioral Retargeting</strong>: Captured organic search intent outside the platform (Anime-related keywords) and connected via IP-matched retargeting</li>
+        </ul>
+
+        <div class="viz">
+          <div class="chart-title">ROAS by Targeting Type — Behavioral Data Dominates</div>
+          <svg viewBox="0 0 480 230" role="img" aria-label="Bar chart comparing ROAS: broad targeting vs behavioral targeting">
+            <line x1="40" y1="195" x2="450" y2="195" stroke="#E2E6EC" stroke-width="1.5"/>
+            <rect x="80" y="169" width="70" height="26" rx="5" fill="#A9B6C6"/>
+            <rect x="205" y="129" width="70" height="66" rx="5" fill="#7BC4A4"/>
+            <rect x="330" y="45" width="70" height="150" rx="5" fill="#0B8A5C"/>
+            <text x="115" y="160" text-anchor="middle" font-size="12.5" fill="#64748B">Baseline</text>
+            <text x="240" y="119" text-anchor="middle" font-size="14" font-weight="800" fill="#16202E">+101%</text>
+            <text x="365" y="35" text-anchor="middle" font-size="15" font-weight="800" fill="#0B8A5C">+229%</text>
+            <text x="115" y="215" text-anchor="middle" font-size="12.5" fill="#64748B">Broad Targeting</text>
+            <text x="240" y="215" text-anchor="middle" font-size="12.5" fill="#64748B">Previously-Read Works</text>
+            <text x="365" y="215" text-anchor="middle" font-size="12.5" fill="#64748B">Similar Genre Readers</text>
+          </svg>
+        </div>
+
+        <h3>Result</h3>
+        <ul>
+          <li>Channel diversification reduced new user CAC by <strong>32% YoY</strong>, breaking Meta/Google dependency</li>
+          <li>Content affinity targeting drove ROAS up to <strong>+229%</strong> (similar genre), pushing key action genre to revenue Top 3</li>
+          <li>Behavioral retargeting drove organic search volume <strong>×10</strong>, social visitor ROAS <strong>MoM +132%</strong></li>
+        </ul>
+        <div class="insight"><span class="lbl">Key Insight</span>Combining content attributes with users' past consumption & search intent — <b>'Content Affinity Targeting'</b> — delivers dramatically higher ROAS than broad targeting.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">-32%</div><div class="k">New User CAC (YoY)</div></div>
+        <div class="kpi"><div class="v">+229%</div><div class="k">Content Affinity ROAS</div></div>
+        <div class="kpi"><div class="v">10x</div><div class="k">Retargeting Organic Search Volume</div></div>
+      </div>
+    </section>
+
+    <!-- 2. Monetization Optimization -->
+    <section class="project" id="monetization">
+      <div class="cat-row"><div class="cat">02 · Monetization Optimization</div><span class="contrib">Contribution 100%</span></div>
+      <div class="proj-head"><h2>Payment Acceleration via Bold Retargeting Window Reduction</h2></div>
+      <div class="proj-body">
+        <h3>Strategy</h3>
+        <ul>
+          <li>Analyzed user behavior patterns and <strong>boldly reduced the retargeting window from 30 to 14 days</strong></li>
+          <li>Ran optimization event A/B test: <strong>'Purchase' vs 'Paid Episode View'</strong></li>
+        </ul>
+
+        <div class="viz">
+          <div class="viz-grid">
+            <figure>
+              <div class="chart-title">Retargeting Window Reduced</div>
+              <svg viewBox="0 0 300 200" role="img" aria-label="Retargeting window reduced from 30 to 14 days">
+                <rect x="45" y="40" width="80" height="140" rx="8" fill="#A9B6C6"/>
+                <text x="85" y="116" text-anchor="middle" font-size="18" font-weight="800" fill="#fff">30 Days</text>
+                <path d="M140,95 L175,95 L175,80 L200,105 L175,130 L175,115 L140,115 Z" fill="#0B8A5C"/>
+                <rect x="210" y="105" width="60" height="75" rx="8" fill="#0B8A5C"/>
+                <text x="240" y="148" text-anchor="middle" font-size="16" font-weight="800" fill="#fff">14 Days</text>
+              </svg>
+              <figcaption>Window redesigned to match content consumption pace</figcaption>
+            </figure>
+            <figure>
+              <div class="chart-title">Monthly ARPPU Trend — 7 Consecutive Months of Growth</div>
+              <svg viewBox="0 0 300 200" role="img" aria-label="Bar chart showing 7 consecutive months of ARPPU growth">
+                <line x1="20" y1="170" x2="290" y2="170" stroke="#E2E6EC" stroke-width="1.5"/>
+                <rect x="30"  y="126" width="24" height="44"  rx="4" fill="#1E3A5F"/>
+                <rect x="67"  y="113" width="24" height="57"  rx="4" fill="#1E3A5F"/>
+                <rect x="104" y="102" width="24" height="68"  rx="4" fill="#1E3A5F"/>
+                <rect x="141" y="88"  width="24" height="82"  rx="4" fill="#1E3A5F"/>
+                <rect x="178" y="73"  width="24" height="97"  rx="4" fill="#1E3A5F"/>
+                <rect x="215" y="60"  width="24" height="110" rx="4" fill="#1E3A5F"/>
+                <rect x="252" y="49"  width="24" height="121" rx="4" fill="#0B8A5C"/>
+                <path d="M42,118 L262,41" stroke="#C0392B" stroke-width="2.5" stroke-dasharray="6 5" fill="none"/>
+                <path d="M251,38 L266,33 L259,49 Z" fill="#C0392B" stroke="#C0392B" stroke-width="1" stroke-linejoin="round"/>
+                <text x="150" y="32" text-anchor="middle" font-size="16" font-weight="800" fill="#C0392B">+24%</text>
+                <text x="42"  y="186" text-anchor="middle" font-size="10.5" fill="#64748B">Jan</text>
+                <text x="116" y="186" text-anchor="middle" font-size="10.5" fill="#64748B">Mar</text>
+                <text x="190" y="186" text-anchor="middle" font-size="10.5" fill="#64748B">May</text>
+                <text x="264" y="186" text-anchor="middle" font-size="10.5" fill="#64748B">Jul</text>
+              </svg>
+            </figure>
+          </div>
+        </div>
+
+        <h3>Result</h3>
+        <p>After adjusting the retargeting window, platform monthly ARPPU rose <strong>24% consistently</strong>, and 'Purchase (Repurchase)' event optimization drove conversions up <strong>more than 8×</strong>.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>Aligning ad exposure windows with the natural consumption pace of serialized content <b>directly accelerates the payment cycle</b>.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">+24%</div><div class="k">Monthly ARPPU Growth</div></div>
+        <div class="kpi"><div class="v">8x+</div><div class="k">Purchase Conversions Growth</div></div>
+      </div>
+    </section>
+
+    <!-- 3. Data Infrastructure -->
+    <section class="project" id="data">
+      <div class="cat-row"><div class="cat">03 · Data Infrastructure</div><span class="contrib">Contribution 100%</span></div>
+      <div class="proj-head"><h2>Cohort Revenue Tracking &amp; Key Title Revenue Growth</h2></div>
+      <div class="proj-body">
+        <h3>Strategy</h3>
+        <ul>
+          <li>Built a precision analytics infrastructure via <strong>Singular and SQL integration</strong></li>
+          <li>Shifted analysis from short-term ROAS to <strong>'30-day cohort cumulative revenue tracking'</strong> and reallocated budgets based on per-title cumulative performance</li>
+        </ul>
+
+        <div class="viz">
+          <div class="chart-title">Cohort Cumulative Revenue ROAS (1d → 30d)</div>
+          <svg viewBox="0 0 480 240" role="img" aria-label="Line chart showing cohort cumulative revenue ROAS by title">
+            <line x1="50" y1="200" x2="450" y2="200" stroke="#E2E6EC" stroke-width="1.5"/>
+            <line x1="50" y1="200" x2="50" y2="20" stroke="#E2E6EC" stroke-width="1.5"/>
+            <g font-size="10.5" fill="#64748B">
+              <text x="42" y="204" text-anchor="end">0%</text>
+              <text x="42" y="140" text-anchor="end">30%</text>
+              <text x="42" y="76" text-anchor="end">60%</text>
+              <text x="42" y="28" text-anchor="end">85%</text>
+            </g>
+            <line x1="50" y1="136" x2="450" y2="136" stroke="#E2E6EC" stroke-dasharray="3 4"/>
+            <line x1="50" y1="72"  x2="450" y2="72"  stroke="#E2E6EC" stroke-dasharray="3 4"/>
+            <!-- Title A -->
+            <polyline points="80,189 200,136 320,68 430,30" fill="none" stroke="#0B8A5C" stroke-width="3.5" stroke-linecap="round"/>
+            <g fill="#0B8A5C"><circle cx="80" cy="189" r="4.5"/><circle cx="200" cy="136" r="4.5"/><circle cx="320" cy="68" r="4.5"/><circle cx="430" cy="30" r="4.5"/></g>
+            <!-- Title B -->
+            <polyline points="80,196 200,160 320,128 430,94" fill="none" stroke="#1E3A5F" stroke-width="3" stroke-linecap="round"/>
+            <g fill="#1E3A5F"><circle cx="80" cy="196" r="4"/><circle cx="200" cy="160" r="4"/><circle cx="320" cy="128" r="4"/><circle cx="430" cy="94" r="4"/></g>
+            <!-- Title C -->
+            <polyline points="80,198 200,183 320,174 430,164" fill="none" stroke="#A9B6C6" stroke-width="3" stroke-linecap="round"/>
+            <g fill="#A9B6C6"><circle cx="80" cy="198" r="4"/><circle cx="200" cy="183" r="4"/><circle cx="320" cy="174" r="4"/><circle cx="430" cy="164" r="4"/></g>
+            <g font-size="11.5" fill="#64748B">
+              <text x="80" y="222" text-anchor="middle">1d</text>
+              <text x="200" y="222" text-anchor="middle">7d</text>
+              <text x="320" y="222" text-anchor="middle">14d</text>
+              <text x="430" y="222" text-anchor="middle">30d</text>
+            </g>
+          </svg>
+          <div class="legend">
+            <span><i style="background:#0B8A5C"></i>Title A — Focus</span>
+            <span><i style="background:#1E3A5F"></i>Title B</span>
+            <span><i style="background:#A9B6C6"></i>Title C</span>
+          </div>
+          <div class="cap">Cohort tracking revealed Title A's LTV potential that was invisible to short-term ROAS</div>
+        </div>
+
+        <h3>Result</h3>
+        <p>Budget reallocation drove key title revenue up <strong>83%</strong>, and the title held <strong>#1 revenue ranking for 3 consecutive months</strong> on the platform.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>Shifting the analytical lens from short-term ROAS to <b>cohort-based LTV</b> unlocks precise marketing investment decisions.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">+83%</div><div class="k">Key Title Revenue Growth</div></div>
+        <div class="kpi"><div class="v">#1 ×3 Months</div><div class="k">Consecutive #1 Revenue Ranking</div></div>
+      </div>
+    </section>
+
+    <!-- 4. ATT Measurement Strategy -->
+    <section class="project" id="att">
+      <div class="cat-row"><div class="cat">04 · Measurement Strategy</div><span class="contrib">Contribution 100%</span></div>
+      <div class="proj-head"><h2>Post-ATT iOS Measurement Response & First-Party Data Analytics Framework</h2></div>
+      <div class="proj-body">
+        <h3>Problem</h3>
+        <p>After Apple's ATT rollout, <strong>user-level measurement for iOS campaigns became severely limited</strong>, making it difficult to accurately assess true user value from app campaign data alone.</p>
+        <h3>Hypothesis</h3>
+        <ul>
+          <li>SKAN-based aggregated data has clear limitations — <strong>rebuilding the measurement framework around first-party User IDs</strong> is the only way to track long-term user value under ATT</li>
+        </ul>
+
+        <div class="viz">
+          <div class="chart-title">Measurement Strategy Transition</div>
+          <svg viewBox="0 0 480 250" role="img" aria-label="Diagram showing ATT measurement strategy transition steps">
+            <defs>
+              <marker id="arr" markerWidth="9" markerHeight="9" refX="4.5" refY="4.5" orient="auto">
+                <path d="M1,1 L8,4.5 L1,8 Z" fill="#0B8A5C"/>
+              </marker>
+            </defs>
+            <g font-family="Noto Sans KR, sans-serif">
+              <rect x="120" y="12" width="240" height="34" rx="8" fill="#FAE9E6" stroke="#E3B7AF"/>
+              <text x="240" y="33" text-anchor="middle" font-size="13" font-weight="700" fill="#C0392B">ATT Rollout · iOS Measurement Limits Identified</text>
+              <line x1="240" y1="46" x2="240" y2="64" stroke="#0B8A5C" stroke-width="2" marker-end="url(#arr)"/>
+
+              <rect x="120" y="66" width="240" height="34" rx="8" fill="#E4F4EE" stroke="#B6E0CE"/>
+              <text x="240" y="87" text-anchor="middle" font-size="13" font-weight="700" fill="#0B8A5C">Expanded Web-to-App Traffic</text>
+              <line x1="240" y1="100" x2="240" y2="118" stroke="#0B8A5C" stroke-width="2" marker-end="url(#arr)"/>
+
+              <rect x="120" y="120" width="240" height="34" rx="8" fill="#E4F4EE" stroke="#B6E0CE"/>
+              <text x="240" y="141" text-anchor="middle" font-size="13" font-weight="700" fill="#0B8A5C">First-Party User ID Analysis</text>
+              <line x1="240" y1="154" x2="240" y2="172" stroke="#0B8A5C" stroke-width="2" marker-end="url(#arr)"/>
+
+              <rect x="100" y="174" width="280" height="40" rx="8" fill="#1E3A5F"/>
+              <text x="240" y="193" text-anchor="middle" font-size="13" font-weight="700" fill="#fff">Built Snowflake Analytics System</text>
+              <text x="240" y="208" text-anchor="middle" font-size="10.5" fill="#A9C3E0">Signup → Purchase → Repurchase Path Analysis</text>
+            </g>
+          </svg>
+        </div>
+
+        <h3>Action</h3>
+        <ul>
+          <li>Expanded <strong>Web-to-App traffic share</strong> to compensate for iOS measurement limitations</li>
+          <li>Built a <strong>Snowflake-based User ID analysis environment</strong> using Singular integration data</li>
+        </ul>
+        <h3>Analysis</h3>
+        <ul>
+          <li>Connected the <strong>signup → purchase → repurchase path</strong> around first-party User IDs to track long-term user value</li>
+          <li>Segmented and analyzed purchase behavior by country and platform</li>
+        </ul>
+        <h3>Result</h3>
+        <p>Secured a framework to analyze long-term user value using first-party data even under ATT, establishing the basis to <strong>shift KPI focus from short-term CPA to repurchase rate and ARPPU</strong>.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>ATT's constraints are limitations of third-party tracking only. <b>Treating first-party User IDs as an asset</b> actually becomes an opportunity to evolve beyond short-term metrics toward an LTV-centric measurement system.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">First-party</div><div class="k">User ID-Based Measurement System</div></div>
+        <div class="kpi"><div class="v">Snowflake</div><div class="k">Signup→Purchase→Repurchase Path</div></div>
+        <div class="kpi"><div class="v">KPI Shift</div><div class="k">Short-term CPA → Repurchase·ARPPU Focus</div></div>
+      </div>
+    </section>
+    <section class="project" id="crm">
+      <div class="cat-row"><div class="cat">05 · CRM Optimization</div><span class="contrib">Contribution 90%<span class="note">w/ Ops Team</span></span></div>
+      <div class="proj-head"><h2>SQL-Based Funnel Bottleneck Diagnosis & Active User Maximization</h2></div>
+      <div class="proj-body">
+        <h3>Approach</h3>
+        <p>Effective data analysis starts with <strong>understanding data structure (ERD)</strong>. I first map how tables (user logs, payment logs, etc.) connect, then design analysis on top of that structure using <strong>SQL as the tool</strong>. This project shows how that capability led to a real funnel bottleneck diagnosis.</p>
+        <h3>Problem</h3>
+        <p>Analyzing the payment flow based on table relationships in the new-user-to-active-user funnel revealed that <strong>'First Purchase' was the critical bottleneck</strong>.</p>
+
+        <div class="viz">
+          <div class="chart-title">Funnel Bottleneck Diagnosis</div>
+          <svg viewBox="0 0 480 130" role="img" aria-label="Funnel diagram showing bottleneck at first purchase stage">
+            <path d="M20,20 L185,48 L185,82 L20,110 Z" fill="#1E3A5F" opacity="0.85"/>
+            <path d="M295,48 L460,20 L460,110 L295,82 Z" fill="#1E3A5F" opacity="0.85"/>
+            <rect x="185" y="44" width="110" height="42" rx="7" fill="#C0392B"/>
+            <text x="240" y="61" text-anchor="middle" font-size="10.5" fill="#fff" font-weight="600">Bottleneck</text>
+            <text x="240" y="76" text-anchor="middle" font-size="11" fill="#fff" font-weight="800">First Purchase</text>
+            <text x="95" y="69" text-anchor="middle" font-size="11.5" fill="#fff" font-weight="600">New Users</text>
+            <text x="382" y="69" text-anchor="middle" font-size="11.5" fill="#fff" font-weight="600">Active Payers</text>
+          </svg>
+        </div>
+
+        <h3>Strategy</h3>
+        <ul>
+          <li>Leveraging ERD understanding, directly extracted <strong>high-intent non-payer segments via SQL join queries</strong> across user and payment log tables</li>
+          <li>Deployed targeted CRM promotion: <strong>automated 50% cashback on first purchase</strong></li>
+        </ul>
+
+        <div class="codebox" role="img" aria-label="SQL query extracting high-intent non-payer segments">
+          <div class="head"><span class="dot" style="background:#FF5F57"></span><span class="dot" style="background:#FEBC2E"></span><span class="dot" style="background:#28C840"></span>&nbsp;high_intent_non_payers.sql</div>
+<span class="kw">WITH</span> user_activity <span class="kw">AS</span> (<br>
+&nbsp;&nbsp;<span class="kw">SELECT</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;u.id <span class="kw">AS</span> user_id,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">COUNT</span>(<span class="kw">DISTINCT</span> v.episode_id) <span class="kw">AS</span> viewed_episodes,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">COUNT</span>(<span class="kw">DISTINCT</span> v.title_id)   <span class="kw">AS</span> viewed_titles,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="fn">SUM</span>(<span class="kw">CASE WHEN</span> p.id <span class="kw">IS NOT NULL THEN</span> <span class="str">1</span> <span class="kw">ELSE</span> <span class="str">0</span> <span class="kw">END</span>) <span class="kw">AS</span> payment_cnt<br>
+&nbsp;&nbsp;<span class="kw">FROM</span> users u<br>
+&nbsp;&nbsp;<span class="kw">LEFT JOIN</span> view_log v   <span class="kw">ON</span> u.id = v.user_id<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class="kw">AND</span> v.viewed_at <span class="kw">&gt;=</span> <span class="fn">NOW</span>() <span class="kw">-</span> <span class="kw">INTERVAL</span> <span class="str">'30 days'</span><br>
+&nbsp;&nbsp;<span class="kw">LEFT JOIN</span> payment_log p <span class="kw">ON</span> u.id = p.user_id<br>
+&nbsp;&nbsp;<span class="kw">GROUP BY</span> u.id<br>
+)<br>
+<span class="kw">SELECT</span> user_id, viewed_episodes, viewed_titles<br>
+<span class="kw">FROM</span> user_activity<br>
+<span class="kw">WHERE</span> payment_cnt = <span class="str">0</span>&nbsp;&nbsp;<span class="cmt">-- non-payers</span><br>
+<span class="kw">HAVING</span> viewed_episodes <span class="kw">&gt;=</span> <span class="str">20</span>&nbsp;&nbsp;<span class="cmt">-- high-engagement threshold</span><br>
+<span class="kw">ORDER BY</span> viewed_episodes <span class="kw">DESC</span>;
+        </div>
+        <p style="font-size:13px;color:var(--muted);margin-top:10px">After mapping the relationships among users, view_log, and payment_log tables, this query uses a CTE to aggregate each user's 30-day episode views and payment status — directly surfacing the 'high-activity but non-paying' high-intent segment.</p>
+
+        <h3>Result</h3>
+        <p>Targeting high-intent non-payers improved DAU/MAU by <strong>113%</strong>, and the targeted promotion pushed first purchase CVR up by <strong>13 percentage points</strong>.</p>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">+113%</div><div class="k">DAU/MAU Improvement</div></div>
+        <div class="kpi"><div class="v">+13%p</div><div class="k">First Purchase CVR</div></div>
+      </div>
+    </section>
+
+    <!-- 6. Creative A/B Test -->
+    <section class="project" id="abtest">
+      <div class="cat-row"><div class="cat">06 · Creative A/B Test</div><span class="contrib">Contribution 80%<span class="note">w/ Designer</span></span></div>
+      <div class="proj-head"><h2>High-Performing Creative Format by Genre</h2></div>
+      <div class="proj-body">
+        <h3>Strategy</h3>
+        <ul>
+          <li>Ran <strong>A/B tests</strong> segmenting creative formats (image / carousel / video) by content genre (Romance Fantasy, Action, BL)</li>
+        </ul>
+
+        <div class="viz">
+          <div class="chart-title">ROAS by Genre × Creative Format</div>
+          <svg viewBox="0 0 480 240" role="img" aria-label="Grouped bar chart showing A/B test results by genre and creative format">
+            <line x1="40" y1="200" x2="450" y2="200" stroke="#E2E6EC" stroke-width="1.5"/>
+            <!-- Romance Fantasy: Image best -->
+            <rect x="70"  y="50"  width="26" height="150" rx="4" fill="#E0B94B"/>
+            <rect x="102" y="123" width="26" height="77"  rx="4" fill="#7BC4A4"/>
+            <rect x="134" y="134" width="26" height="66"  rx="4" fill="#1E3A5F"/>
+            <!-- Action: Video best -->
+            <rect x="207" y="107" width="26" height="93"  rx="4" fill="#E0B94B"/>
+            <rect x="239" y="104" width="26" height="96"  rx="4" fill="#7BC4A4"/>
+            <rect x="271" y="59"  width="26" height="141" rx="4" fill="#1E3A5F"/>
+            <path d="M220,90 L284,90 L284,49" fill="none" stroke="#C0392B" stroke-width="2" stroke-dasharray="5 4"/>
+            <path d="M278,46 L284,42 L290,46 L284,56 Z" fill="#C0392B"/>
+            <!-- BL: Image best -->
+            <rect x="344" y="63"  width="26" height="137" rx="4" fill="#E0B94B"/>
+            <rect x="376" y="113" width="26" height="87"  rx="4" fill="#7BC4A4"/>
+            <rect x="408" y="98"  width="26" height="102" rx="4" fill="#1E3A5F"/>
+            <g font-size="12.5" fill="#64748B">
+              <text x="115" y="222" text-anchor="middle">Romance Fantasy</text>
+              <text x="252" y="222" text-anchor="middle">Action</text>
+              <text x="389" y="222" text-anchor="middle">BL</text>
+            </g>
+          </svg>
+          <div class="legend">
+            <span><i style="background:#E0B94B"></i>Image</span>
+            <span><i style="background:#7BC4A4"></i>Carousel</span>
+            <span><i style="background:#1E3A5F"></i>Video</span>
+          </div>
+          <div class="cap">Emotion-driven genres (RF·BL) → images outperform; action-driven genres → videos win</div>
+        </div>
+
+        <h3>Result</h3>
+        <p>Matching high-efficiency creative formats by genre lifted overall ROAS by <strong>163 percentage points</strong> and established a data-driven creative A/B testing methodology across the team.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>Creative formats must be <b>perfectly synchronized with the consumption style unique to each genre</b> (dynamic action vs. static emotion-driven) to achieve peak efficiency.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">+163%p</div><div class="k">Overall ROAS Growth</div></div>
+        <div class="kpi"><div class="v">Methodology</div><div class="k">Creative A/B Test Framework</div></div>
+      </div>
+    </section>
+
+    <!-- 7. Lifecycle Marketing -->
+    <section class="project" id="lifecycle">
+      <div class="cat-row"><div class="cat">07 · Lifecycle Marketing</div><span class="contrib">Contribution 80%<span class="note">w/ Ops Team</span></span></div>
+      <div class="proj-head"><h2>Stage-Based CRM Messaging Map</h2></div>
+      <div class="proj-body">
+        <h3>Strategy</h3>
+        <p>Segmented user churn points into 3 stages and designed a tailored CRM messaging map addressing the pain point of each stage.</p>
+
+        <div class="stage-map">
+          <div class="stage">
+            <div class="st-head">Stage 1 · Churn Before Free Browse</div>
+            <div class="pain"><b>Pain Point</b>Failed to find content of interest</div>
+            <div class="strat">Strategy: Curate bestsellers & interest-based recommendations</div>
+          </div>
+          <div class="stage">
+            <div class="st-head">Stage 2 · Churn Before First Purchase</div>
+            <div class="pain"><b>Pain Point</b>Insufficient content engagement</div>
+            <div class="strat">Strategy: Recommend killer content from similar genres</div>
+          </div>
+          <div class="stage">
+            <div class="st-head">Stage 3 · Churn Before Repurchase</div>
+            <div class="pain"><b>Pain Point</b>Resistance to additional payment after coin depletion</div>
+            <div class="strat">Strategy: Limited coin purchase promo with N% discount</div>
+          </div>
+        </div>
+
+        <h3>Result</h3>
+        <p>Influencer activation drove engagement <strong>×10 vs. baseline</strong>, and stage-specific tailored messaging achieved a first purchase CVR <strong>23% higher</strong> than other creatives.</p>
+        <div class="insight"><span class="lbl">Key Insight</span>The marketing impact is maximized when the initial trust built by influencers is <b>carried forward by stage-specific CRM messages</b>.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">10x</div><div class="k">vs. Average Engagement</div></div>
+        <div class="kpi"><div class="v">+23%</div><div class="k">First Purchase CVR (vs. other creatives)</div></div>
+      </div>
+    </section>
+
+    <!-- 8. Cross-Genre Strategy -->
+    <section class="project" id="crossgenre">
+      <div class="cat-row"><div class="cat">08 · Data · CRM · Paid Retargeting</div><span class="contrib">Contribution 100%</span></div>
+      <div class="proj-head"><h2>Core User Conversion Improvement via Cross-Genre Strategy</h2></div>
+      <div class="proj-body">
+        <h3>Problem</h3>
+        <p>UA was focused on BL genre under the assumption that its low CAC would drive volume. However, a Snowflake SQL LTV cohort analysis of 17,819 paying users revealed that over 55% of BL-only users remained light users (LTV €30 or below), resulting in <strong>structurally low core user conversion rates</strong>.</p>
+
+        <h3>Data Insight</h3>
+        <p>Analyzing core user behavior (Minnow, LTV €100+) confirmed that <strong>60% were cross-genre consumers (BL + Romance)</strong>. Cross-genre users showed avg LTV +164%, active lifespan ×2.2, monthly spend +21%, and monthly episode purchases +47% vs. BL-only users.</p>
+
+        <div class="viz">
+          <div class="chart-title">Core User (Minnow+) Genre Consumption Pattern</div>
+          <svg viewBox="0 0 480 180" role="img" aria-label="Comparison chart showing 60% of core users are cross-genre consumers">
+            <rect x="40" y="40" width="170" height="100" rx="10" fill="#1E3A5F" opacity="0.9"/>
+            <text x="125" y="83" text-anchor="middle" font-size="28" font-weight="800" fill="#7BC4A4">60%</text>
+            <text x="125" y="103" text-anchor="middle" font-size="12" fill="#fff">BL+Romance Cross</text>
+            <text x="125" y="118" text-anchor="middle" font-size="11.5" fill="#A9B6C6">Core Users (Minnow+)</text>
+            <rect x="270" y="40" width="170" height="100" rx="10" fill="#E2E6EC"/>
+            <text x="355" y="83" text-anchor="middle" font-size="28" font-weight="800" fill="#C0392B">55%</text>
+            <text x="355" y="103" text-anchor="middle" font-size="12" fill="#64748B">BL Genre Only</text>
+            <text x="355" y="118" text-anchor="middle" font-size="11.5" fill="#A9B6C6">Light Users (Small Fish)</text>
+            <text x="240" y="165" text-anchor="middle" font-size="12" fill="#64748B">💡 Key trigger for becoming a core user = BL + Romance cross-genre experience</text>
+          </svg>
+        </div>
+
+        <h3>Solution</h3>
+        <ul>
+          <li><strong>CRM (In-app Push):</strong> Extracted BL reader segments from Snowflake and directly designed & ran personalized in-app push campaigns recommending top cross-genre pairs (e.g., Jinx → Hana's Demon of Lust)</li>
+          <li><strong>Meta Paid Retargeting:</strong> Uploaded the same BL user segment as a Meta Custom Audience to serve Romance creatives, executing a multi-touch strategy linking CRM and paid channels</li>
+          <li><strong>Cross-Pair Optimization:</strong> Validated high-converting BL→Romance pairings with quarterly data and updated priority exposure pairs</li>
+        </ul>
+
+        <h3>Result</h3>
+        <ul>
+          <li>Core user (Minnow+) ratio improved <strong>+15% QoQ</strong></li>
+          <li>Cross-genre conversion users avg LTV <strong>+164%</strong>, median LTV <strong>+317%</strong></li>
+          <li>Active lifespan extended <strong>×2.2</strong> — confirmed structural LTV improvement vs. CAC</li>
+        </ul>
+        <div class="insight"><span class="lbl">Key Insight</span>Testing the UA volume hypothesis (BL CAC is cheap) with data revealed that <b>user quality (cross-genre experience) is the decisive variable for LTV</b>. Snowflake cohort analysis → CRM + Paid multi-touch execution structurally improved core user ratio.</div>
+      </div>
+      <div class="kpis">
+        <div class="kpi"><div class="v">+15%</div><div class="k">Core User (Minnow+) Rate (QoQ)</div></div>
+        <div class="kpi"><div class="v">+164%</div><div class="k">Cross-Genre Users Avg LTV</div></div>
+        <div class="kpi"><div class="v">2.2×</div><div class="k">Active Lifespan Extended</div></div>
+      </div>
+    </section>
+
+  </div>
+</main>
+</div>
+
+<footer>© 2026 Hyunji Kim · Growth Marketing Portfolio · Last updated June 2026</footer>
+
+<script>
+const links=[...document.querySelectorAll('.sidenav a, .mobilenav a')];
+const secs=[...document.querySelectorAll('section.project')];
+const io=new IntersectionObserver(es=>{
+  es.forEach(e=>{
+    if(e.isIntersecting){
+      links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+e.target.id));
+    }
+  });
+},{rootMargin:'-30% 0px -60% 0px'});
+secs.forEach(s=>io.observe(s));
+</script>
+</body>
+</html>
